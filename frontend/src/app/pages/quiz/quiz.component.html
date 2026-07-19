@@ -1,0 +1,137 @@
+<div class="page quiz-page">
+  <div class="container">
+    @if (!quizStarted()) {
+      <!-- Setup Screen -->
+      <div class="quiz-setup">
+        <div class="setup-header">
+          <h1>Chemistry <span class="text-gradient">Quiz</span></h1>
+          <p>Test your chemistry knowledge with interactive questions</p>
+        </div>
+
+        <div class="setup-form glass">
+          <div class="form-group">
+            <label class="form-label">Difficulty</label>
+            <div class="option-buttons">
+              <button class="option-btn" [class.active]="!selectedDifficulty()" (click)="selectedDifficulty.set('')">All</button>
+              @for (diff of difficulties; track diff) {
+                <button class="option-btn" [class.active]="selectedDifficulty() === diff" (click)="selectedDifficulty.set(diff)">{{ diff }}</button>
+              }
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Topic</label>
+            <div class="option-buttons topic-buttons">
+              <button class="option-btn" [class.active]="!selectedTopic()" (click)="selectedTopic.set('')">All Topics</button>
+              @for (topic of topics(); track topic) {
+                <button class="option-btn" [class.active]="selectedTopic() === topic" (click)="selectedTopic.set(topic)">{{ topic }}</button>
+              }
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label class="form-label">Number of Questions</label>
+            <div class="option-buttons">
+              @for (n of [5, 10, 15, 20]; track n) {
+                <button class="option-btn" [class.active]="questionCount() === n" (click)="questionCount.set(n)">{{ n }}</button>
+              }
+            </div>
+          </div>
+
+          <button class="btn btn-primary btn-lg start-btn" (click)="startQuiz()" [disabled]="loading()">
+            @if (loading()) { Loading... } @else { 🚀 Start Quiz }
+          </button>
+        </div>
+      </div>
+    } @else if (quizComplete()) {
+      <!-- Score Card -->
+      <div class="score-card animate-fade-in-up">
+        <div class="score-header glass">
+          <h2>Quiz Complete!</h2>
+          <div class="score-circle">
+            <span class="score-value">{{ getScorePercentage() }}%</span>
+          </div>
+          <p class="score-detail">{{ score() }} out of {{ questions().length }} correct</p>
+          <p class="score-message">{{ getScoreMessage() }}</p>
+          <div class="score-actions">
+            <button class="btn btn-primary" (click)="restartQuiz()">🔄 New Quiz</button>
+          </div>
+        </div>
+
+        <!-- Review -->
+        <div class="review-section">
+          <h3>Review Answers</h3>
+          @for (q of questions(); track q._id; let i = $index) {
+            <div class="review-card glass" [class.correct]="answers()[i] === q.correctAnswer" [class.wrong]="answers()[i] !== q.correctAnswer">
+              <div class="review-header">
+                <span class="review-num">{{ i + 1 }}</span>
+                <span class="review-status">{{ answers()[i] === q.correctAnswer ? '✓' : '✗' }}</span>
+              </div>
+              <p class="review-question">{{ q.question }}</p>
+              <p class="review-answer">Your answer: <strong>{{ q.options[answers()[i]!] }}</strong></p>
+              @if (answers()[i] !== q.correctAnswer) {
+                <p class="review-correct">Correct: <strong>{{ q.options[q.correctAnswer] }}</strong></p>
+              }
+              <p class="review-explanation">{{ q.explanation }}</p>
+            </div>
+          }
+        </div>
+      </div>
+    } @else {
+      <!-- Quiz Mode -->
+      <div class="quiz-mode">
+        <div class="quiz-header">
+          <div class="quiz-progress">
+            <span>Question {{ currentIndex() + 1 }} of {{ questions().length }}</span>
+            <span class="quiz-score">Score: {{ score() }}</span>
+          </div>
+          <div class="progress-bar">
+            <div class="progress-fill" [style.width.%]="getProgress()"></div>
+          </div>
+        </div>
+
+        <div class="question-card glass animate-fade-in">
+          @if (questions()[currentIndex()]; as q) {
+            <div class="question-meta">
+              <span class="badge badge-secondary">{{ q.difficulty }}</span>
+              <span class="badge badge-primary">{{ q.topic }}</span>
+            </div>
+            <h2 class="question-text">{{ q.question }}</h2>
+
+            <div class="options-list">
+              @for (option of q.options; track option; let i = $index) {
+                <button
+                  class="option-card"
+                  [class.selected]="selectedAnswer() === i"
+                  [class.correct]="showExplanation() && isCorrect(i)"
+                  [class.wrong]="showExplanation() && selectedAnswer() === i && !isCorrect(i)"
+                  (click)="selectOption(i)"
+                  [disabled]="showExplanation()"
+                >
+                  <span class="option-letter">{{ ['A', 'B', 'C', 'D'][i] }}</span>
+                  <span class="option-text">{{ option }}</span>
+                  @if (showExplanation() && isCorrect(i)) {
+                    <span class="option-icon">✓</span>
+                  }
+                  @if (showExplanation() && selectedAnswer() === i && !isCorrect(i)) {
+                    <span class="option-icon">✗</span>
+                  }
+                </button>
+              }
+            </div>
+
+            @if (showExplanation()) {
+              <div class="explanation-box animate-fade-in">
+                <h4>📖 Explanation</h4>
+                <p>{{ q.explanation }}</p>
+              </div>
+              <button class="btn btn-primary next-btn" (click)="nextQuestion()">
+                {{ currentIndex() < questions().length - 1 ? 'Next Question →' : 'View Results' }}
+              </button>
+            }
+          }
+        </div>
+      </div>
+    }
+  </div>
+</div>

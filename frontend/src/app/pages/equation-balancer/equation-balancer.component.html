@@ -1,0 +1,50 @@
+<div class="page balancer-page">
+  <div class="container narrow">
+    <div class="page-header">
+      <h1>Equation <span class="text-gradient">Balancer</span></h1>
+      <p>Enter an unbalanced chemical equation and get it balanced instantly</p>
+    </div>
+
+    <div class="balancer-form glass">
+      <div class="form-group">
+        <label class="form-label">Enter Equation</label>
+        <input
+          type="text"
+          class="form-control input-lg"
+          placeholder="e.g. Fe + O2 = Fe2O3"
+          [ngModel]="input()"
+          (ngModelChange)="input.set($event)"
+          (keyup.enter)="balance()"
+        />
+        <span class="input-hint">Use + between compounds, = or → between sides</span>
+      </div>
+      <button class="btn btn-primary btn-lg" (click)="balance()">⚖️ Balance Equation</button>
+    </div>
+
+    @if (error()) {
+      <div class="error-msg glass">⚠️ {{ error() }}</div>
+    }
+
+    @if (result()?.success) {
+      <div class="result-box glass animate-fade-in-up">
+        <h3>✅ Balanced Equation</h3>
+        <div class="equation-display">{{ result()!.balanced }}</div>
+        <div class="coefficients">
+          <span class="coeff-label">Coefficients:</span>
+          @for (c of result()!.coefficients; track $index) {
+            <span class="coeff-badge">{{ c }}</span>
+          }
+        </div>
+      </div>
+    }
+
+    <div class="examples-section">
+      <h3>Try an Example</h3>
+      <div class="examples-grid">
+        @for (ex of examples; track ex) {
+          <button class="example-btn glass-card" (click)="loadExample(ex)">{{ ex }}</button>
+        }
+      </div>
+    </div>
+  </div>
+</div>

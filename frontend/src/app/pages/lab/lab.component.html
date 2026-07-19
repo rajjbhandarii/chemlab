@@ -1,0 +1,219 @@
+<div class="page lab-page">
+  <div class="container">
+    <div class="page-header">
+      <h1>Reaction <span class="text-gradient">Simulator</span></h1>
+      <p>Add chemicals and simulate their reaction</p>
+    </div>
+
+    <div class="lab-layout">
+      <!-- Input Panel -->
+      <div class="input-panel">
+        <div class="panel glass">
+          <h3 class="panel-title">🧪 Select Chemicals</h3>
+
+          <div class="chemical-inputs">
+            @for (input of inputs(); track input.id; let i = $index) {
+              <div class="input-row">
+                <label class="input-label">Chemical {{ i + 1 }}</label>
+                <div class="autocomplete-wrapper">
+                  <input
+                    type="text"
+                    class="form-control"
+                    [placeholder]="'Type chemical name or formula...'"
+                    [value]="input.query"
+                    (input)="onSearchInput(input, $any($event.target).value)"
+                    (focus)="input.suggestions.length > 0 && (input.showSuggestions = true)"
+                    (blur)="hideSuggestions(input)"
+                    [class.selected]="input.selectedFormula"
+                  />
+                  @if (input.selectedFormula) {
+                    <span class="selected-check">✓</span>
+                  }
+                  @if (input.showSuggestions && input.suggestions.length > 0) {
+                    <div class="suggestions-dropdown">
+                      @for (s of input.suggestions; track s._id) {
+                        <button class="suggestion-item" (mousedown)="selectSuggestion(input, s)">
+                          <span class="sug-formula">{{ s.formula }}</span>
+                          <span class="sug-name">{{ s.name }}</span>
+                          <span class="sug-cat">{{ s.category }}</span>
+                        </button>
+                      }
+                    </div>
+                  }
+                </div>
+                @if (inputs().length > 2) {
+                  <button class="btn-remove" (click)="removeInput(input.id)" aria-label="Remove chemical">
+                    ✕
+                  </button>
+                }
+              </div>
+            }
+          </div>
+
+          <div class="input-actions">
+            <button class="btn btn-secondary btn-sm" (click)="addInput()">
+              + Add Another Chemical
+            </button>
+          </div>
+
+          <div class="react-actions">
+            <button class="btn btn-primary btn-lg react-btn" [disabled]="!canReact() || loading()" (click)="react()">
+              @if (loading()) {
+                <span class="spinner"></span> Reacting...
+              } @else {
+                ⚡ React
+              }
+            </button>
+            <button class="btn btn-secondary btn-sm" (click)="clearAll()">Clear All</button>
+          </div>
+        </div>
+
+        <!-- Popular Reactions Sidebar -->
+        @if (popularReactions().length > 0) {
+          <div class="panel glass popular-panel">
+            <h3 class="panel-title">🔥 Popular Reactions</h3>
+            <div class="popular-list">
+              @for (rxn of popularReactions(); track rxn._id) {
+                <button class="popular-item" (click)="loadPopularReaction(rxn)">
+                  <span class="pop-equation">{{ rxn.reactants.join(' + ') }}</span>
+                  <span class="pop-type badge badge-secondary">{{ rxn.reactionType }}</span>
+                </button>
+              }
+            </div>
+          </div>
+        }
+      </div>
+
+      <!-- Result Panel -->
+      <div class="result-panel">
+        @if (loading()) {
+          <app-loading-spinner></app-loading-spinner>
+        }
+
+        @if (showResult() && result()) {
+          @if (result()!.found && result()!.reaction; as rxn) {
+            <div class="result-content animate-fade-in-up">
+              <!-- Balanced Equation -->
+              <div class="result-section equation-section glass">
+                <h3>⚖️ Balanced Equation</h3>
+                <div class="equation-display">{{ rxn.balancedEquation }}</div>
+              </div>
+
+              <!-- Reaction Info Row -->
+              <div class="info-row">
+                <div class="info-card glass">
+                  <span class="info-label">Reaction Type</span>
+                  <span class="info-value badge badge-secondary">{{ rxn.reactionType }}</span>
+                </div>
+                <div class="info-card glass">
+                  <span class="info-label">Energy</span>
+                  <span class="info-value" [class.exo]="rxn.energy === 'Exothermic'" [class.endo]="rxn.energy === 'Endothermic'">
+                    {{ rxn.energy === 'Exothermic' ? '🔥' : '❄️' }} {{ rxn.energy }}
+                  </span>
+                </div>
+                <div class="info-card glass" [ngClass]="getDangerClass(rxn.dangerLevel)">
+                  <span class="info-label">Safety Level</span>
+                  <span class="info-value">{{ rxn.dangerLevel }}</span>
+                </div>
+              </div>
+
+              <!-- Products -->
+              <div class="result-section glass">
+                <h3>🧫 Products</h3>
+                <div class="products-grid">
+                  @for (product of rxn.products; track product.formula) {
+                    <div class="product-card">
+                      <span class="product-formula">{{ product.formula }}</span>
+                      <span class="product-name">{{ product.name }}</span>
+                      <div class="product-details">
+                        <span class="product-state">{{ product.physicalState }}</span>
+                        <span class="product-color">
+                          <span class="color-dot" [style.background]="product.color === 'Colorless' ? 'transparent' : product.color"></span>
+                          {{ product.color }}
+                        </span>
+                      </div>
+                    </div>
+                  }
+                </div>
+              </div>
+
+              <!-- Observations -->
+              @if (rxn.observations && rxn.observations.length > 0) {
+                <div class="result-section glass">
+                  <h3>👁️ Observations</h3>
+                  <ul class="observations-list">
+                    @for (obs of rxn.observations; track obs) {
+                      <li>{{ obs }}</li>
+                    }
+                  </ul>
+                </div>
+              }
+
+              <!-- Conditions -->
+              <div class="result-section glass">
+                <h3>⚙️ Conditions Required</h3>
+                @if (rxn.conditions.required && rxn.conditions.details.length) {
+                  <ul class="conditions-list">
+                    @for (cond of rxn.conditions.details; track cond) {
+                      <li>{{ cond }}</li>
+                    }
+                  </ul>
+                } @else {
+                  <p class="no-conditions">No special conditions required.</p>
+                }
+              </div>
+
+              <!-- Safety Warnings -->
+              @if (rxn.safetyWarnings && rxn.safetyWarnings.length > 0) {
+                <div class="result-section glass safety-section">
+                  <h3>⚠️ Safety Warnings</h3>
+                  <div class="safety-list">
+                    @for (warning of rxn.safetyWarnings; track warning.type) {
+                      <div class="warning-item">
+                        <app-safety-badge
+                          [label]="warning.type"
+                          [severity]="warning.severity"
+                          [type]="warning.type"
+                        ></app-safety-badge>
+                        <p>{{ warning.description }}</p>
+                      </div>
+                    }
+                  </div>
+                </div>
+              }
+
+              <!-- Explanation -->
+              <div class="result-section glass">
+                <h3>📖 Scientific Explanation</h3>
+                <p class="explanation-text">{{ rxn.explanation }}</p>
+              </div>
+
+              <!-- Fun Fact -->
+              @if (rxn.funFact) {
+                <div class="result-section glass fun-fact">
+                  <h3>💡 Fun Fact</h3>
+                  <p>{{ rxn.funFact }}</p>
+                </div>
+              }
+            </div>
+          } @else {
+            <!-- No Reaction Found -->
+            <div class="no-result glass animate-fade-in">
+              <span class="no-result-icon">🔬</span>
+              <h3>No Reaction Found</h3>
+              <p>{{ result()!.message || 'This combination may not produce a significant reaction, or it is not in our database yet.' }}</p>
+            </div>
+          }
+        }
+
+        @if (!loading() && !showResult()) {
+          <div class="placeholder-state glass">
+            <span class="placeholder-icon">⚗️</span>
+            <h3>Ready to Experiment</h3>
+            <p>Select chemicals and click React to simulate a chemical reaction</p>
+          </div>
+        }
+      </div>
+    </div>
+  </div>
+</div>

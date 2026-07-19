@@ -1,0 +1,145 @@
+<div class="page calc-page">
+  <div class="container">
+    <div class="page-header"><h1>Chemistry <span class="text-gradient">Calculators</span></h1><p>Essential tools for chemistry calculations</p></div>
+
+    <div class="tabs calc-tabs">
+      @for (tab of tabs; track tab.name; let i = $index) {
+        <button class="tab" [class.active]="activeTab() === i" (click)="activeTab.set(i)">{{ tab.icon }} {{ tab.name }}</button>
+      }
+    </div>
+
+    <div class="calc-content glass">
+      <!-- Molar Mass -->
+      @if (activeTab() === 0) {
+        <h3>⚖️ Molar Mass Calculator</h3>
+        <p class="calc-desc">Enter a chemical formula to calculate its molar mass.</p>
+        <div class="calc-form">
+          <div class="form-group"><label class="form-label">Formula</label>
+            <input type="text" class="form-control" placeholder="e.g. H2O, NaCl, Ca(OH)2" [(ngModel)]="mmFormula" (keyup.enter)="calcMolarMass()"/></div>
+          <button class="btn btn-primary" (click)="calcMolarMass()">Calculate</button>
+        </div>
+        @if (mmResult) {
+          <div class="calc-result animate-fade-in">
+            <div class="result-main">Molar Mass = <strong>{{ mmResult.mass }} g/mol</strong></div>
+            <div class="breakdown"><h4>Element Breakdown</h4>
+              @for (b of mmResult.breakdown; track b.element) {
+                <div class="break-row"><span>{{ b.element }}</span><span>× {{ b.count }}</span><span>= {{ b.mass | number:'1.3-3' }} g/mol</span></div>
+              }
+            </div>
+          </div>
+        }
+      }
+
+      <!-- Molarity -->
+      @if (activeTab() === 1) {
+        <h3>🧪 Molarity Calculator</h3>
+        <p class="calc-desc">M = moles of solute / liters of solution</p>
+        <div class="calc-form">
+          <div class="form-group"><label class="form-label">Moles of Solute</label><input type="number" class="form-control" [(ngModel)]="molMoles" placeholder="moles"/></div>
+          <div class="form-group"><label class="form-label">Volume (L)</label><input type="number" class="form-control" [(ngModel)]="molLiters" placeholder="liters"/></div>
+          <button class="btn btn-primary" (click)="calcMolarity()">Calculate</button>
+        </div>
+        @if (molResult !== null) {
+          <div class="calc-result animate-fade-in"><div class="result-main">Molarity = <strong>{{ molResult }} M</strong></div></div>
+        }
+      }
+
+      <!-- Dilution -->
+      @if (activeTab() === 2) {
+        <h3>💧 Dilution Calculator</h3>
+        <p class="calc-desc">M₁V₁ = M₂V₂</p>
+        <div class="calc-form">
+          <div class="form-group"><label class="form-label">M₁ (Initial Molarity)</label><input type="number" class="form-control" [(ngModel)]="dilM1"/></div>
+          <div class="form-group"><label class="form-label">V₁ (Initial Volume, mL)</label><input type="number" class="form-control" [(ngModel)]="dilV1"/></div>
+          <div class="form-group"><label class="form-label">M₂ (Final Molarity)</label><input type="number" class="form-control" [(ngModel)]="dilM2"/></div>
+          <button class="btn btn-primary" (click)="calcDilution()">Calculate V₂</button>
+        </div>
+        @if (dilV2Result !== null) {
+          <div class="calc-result animate-fade-in"><div class="result-main">V₂ = <strong>{{ dilV2Result }} mL</strong></div></div>
+        }
+      }
+
+      <!-- Stoichiometry -->
+      @if (activeTab() === 3) {
+        <h3>📐 Stoichiometry Calculator</h3>
+        <p class="calc-desc">Given mass of reactant → mass of product</p>
+        <div class="calc-form">
+          <div class="form-group"><label class="form-label">Mass of Given (g)</label><input type="number" class="form-control" [(ngModel)]="stoichGiven"/></div>
+          <div class="form-group"><label class="form-label">Molar Mass of Given (g/mol)</label><input type="number" class="form-control" [(ngModel)]="stoichMmGiven"/></div>
+          <div class="form-group"><label class="form-label">Coefficient of Given</label><input type="number" class="form-control" [(ngModel)]="stoichCoeffGiven"/></div>
+          <div class="form-group"><label class="form-label">Coefficient of Product</label><input type="number" class="form-control" [(ngModel)]="stoichCoeffProduct"/></div>
+          <div class="form-group"><label class="form-label">Molar Mass of Product (g/mol)</label><input type="number" class="form-control" [(ngModel)]="stoichMmProduct"/></div>
+          <button class="btn btn-primary" (click)="calcStoich()">Calculate</button>
+        </div>
+        @if (stoichResult !== null) {
+          <div class="calc-result animate-fade-in"><div class="result-main">Mass of Product = <strong>{{ stoichResult }} g</strong></div></div>
+        }
+      }
+
+      <!-- % Composition -->
+      @if (activeTab() === 4) {
+        <h3>📊 Percentage Composition</h3>
+        <p class="calc-desc">Find the mass percent of each element in a compound.</p>
+        <div class="calc-form">
+          <div class="form-group"><label class="form-label">Formula</label><input type="text" class="form-control" [(ngModel)]="compFormula" placeholder="e.g. H2O" (keyup.enter)="calcComposition()"/></div>
+          <button class="btn btn-primary" (click)="calcComposition()">Calculate</button>
+        </div>
+        @if (compResult) {
+          <div class="calc-result animate-fade-in">
+            <div class="result-main">Total Molar Mass = <strong>{{ compResult.total }} g/mol</strong></div>
+            @for (el of compResult.elements; track el.element) {
+              <div class="break-row"><span>{{ el.element }}</span><span>{{ el.percentage }}%</span><span>{{ el.mass | number:'1.3-3' }} g/mol</span></div>
+            }
+          </div>
+        }
+      }
+
+      <!-- Ideal Gas Law -->
+      @if (activeTab() === 5) {
+        <h3>🌡️ Ideal Gas Law (PV = nRT)</h3>
+        <p class="calc-desc">Leave one field empty to solve for it. R = 0.08206 L·atm/(mol·K)</p>
+        <div class="calc-form">
+          <div class="form-group"><label class="form-label">P (atm)</label><input type="number" class="form-control" [(ngModel)]="igP" placeholder="Leave empty to solve"/></div>
+          <div class="form-group"><label class="form-label">V (L)</label><input type="number" class="form-control" [(ngModel)]="igV" placeholder="Leave empty to solve"/></div>
+          <div class="form-group"><label class="form-label">n (mol)</label><input type="number" class="form-control" [(ngModel)]="igN" placeholder="Leave empty to solve"/></div>
+          <div class="form-group"><label class="form-label">T (K)</label><input type="number" class="form-control" [(ngModel)]="igT" placeholder="Leave empty to solve"/></div>
+          <button class="btn btn-primary" (click)="calcIdealGas()">Calculate</button>
+        </div>
+        @if (igResult) {
+          <div class="calc-result animate-fade-in"><div class="result-main">{{ igResult.solveFor }} = <strong>{{ igResult[igResult.solveFor] | number:'1.4-4' }}</strong></div></div>
+        }
+      }
+
+      <!-- pH -->
+      @if (activeTab() === 6) {
+        <h3>🔬 pH Calculator</h3>
+        <p class="calc-desc">Enter H⁺ concentration to calculate pH, pOH, and OH⁻ concentration.</p>
+        <div class="calc-form">
+          <div class="form-group"><label class="form-label">[H⁺] Concentration (mol/L)</label><input type="number" class="form-control" [(ngModel)]="phInput" placeholder="e.g. 0.01" step="any"/></div>
+          <button class="btn btn-primary" (click)="calcPH()">Calculate</button>
+        </div>
+        @if (phResult) {
+          <div class="calc-result animate-fade-in">
+            <div class="result-main">pH = <strong>{{ phResult.pH }}</strong></div>
+            <div class="break-row"><span>pOH</span><span>{{ phResult.pOH }}</span></div>
+            <div class="break-row"><span>[OH⁻]</span><span>{{ phResult.ohConc | number:'1.2-6' }} mol/L</span></div>
+          </div>
+        }
+      }
+
+      <!-- Yield -->
+      @if (activeTab() === 7) {
+        <h3>📈 Reaction Yield</h3>
+        <p class="calc-desc">% Yield = (Actual Yield / Theoretical Yield) × 100</p>
+        <div class="calc-form">
+          <div class="form-group"><label class="form-label">Actual Yield (g)</label><input type="number" class="form-control" [(ngModel)]="yieldActual"/></div>
+          <div class="form-group"><label class="form-label">Theoretical Yield (g)</label><input type="number" class="form-control" [(ngModel)]="yieldTheoretical"/></div>
+          <button class="btn btn-primary" (click)="calcYield()">Calculate</button>
+        </div>
+        @if (yieldResult !== null) {
+          <div class="calc-result animate-fade-in"><div class="result-main">% Yield = <strong>{{ yieldResult }}%</strong></div></div>
+        }
+      }
+    </div>
+  </div>
+</div>

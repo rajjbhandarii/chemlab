@@ -1,0 +1,174 @@
+<div class="home-page">
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="molecule molecule-1"></div>
+      <div class="molecule molecule-2"></div>
+      <div class="molecule molecule-3"></div>
+      <div class="molecule molecule-4"></div>
+      <div class="molecule molecule-5"></div>
+      <div class="molecule molecule-6"></div>
+      <div class="particle particle-1"></div>
+      <div class="particle particle-2"></div>
+      <div class="particle particle-3"></div>
+      <div class="particle particle-4"></div>
+      <div class="particle particle-5"></div>
+      <div class="particle particle-6"></div>
+      <div class="particle particle-7"></div>
+      <div class="particle particle-8"></div>
+    </div>
+    <div class="container hero-content">
+      <span class="hero-badge badge badge-primary">⚗️ Free Chemistry Simulator</span>
+      <h1 class="hero-title">
+        Interactive Chemistry<br>
+        <span class="text-gradient">Reaction Simulator</span>
+      </h1>
+      <p class="hero-subtitle">
+        Mix chemicals, predict reactions, balance equations, explore chemistry, and learn scientifically.
+      </p>
+      <div class="hero-actions">
+        <a routerLink="/lab" class="btn btn-primary btn-lg">
+          🧪 Start Mixing
+        </a>
+        <a routerLink="/chemicals" class="btn btn-secondary btn-lg">
+          📖 Browse Chemicals
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-value">{{ stats().chemicals || '0' }}+</span>
+          <span class="stat-label">Chemicals</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-value">{{ stats().reactions || '0' }}+</span>
+          <span class="stat-label">Reactions</span>
+        </div>
+        <div class="stat-divider"></div>
+        <div class="stat-item">
+          <span class="stat-value">{{ stats().quizzes || '0' }}+</span>
+          <span class="stat-label">Quizzes</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works -->
+  <section class="section how-it-works">
+    <div class="container">
+      <div class="section-header">
+        <h2>How It <span class="text-gradient">Works</span></h2>
+        <p>Simulate chemical reactions in four simple steps</p>
+      </div>
+      <div class="steps-grid">
+        @for (step of steps; track step.title; let i = $index) {
+          <div class="step-card glass-card" [style.animation-delay]="i * 0.1 + 's'">
+            <div class="step-number">{{ i + 1 }}</div>
+            <span class="step-icon">{{ step.icon }}</span>
+            <h3>{{ step.title }}</h3>
+            <p>{{ step.desc }}</p>
+            @if (i < steps.length - 1) {
+              <div class="step-arrow">→</div>
+            }
+          </div>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Popular Reactions -->
+  <section class="section popular-reactions">
+    <div class="container">
+      <div class="section-header">
+        <h2>Popular <span class="text-gradient">Reactions</span></h2>
+        <p>Try these classic chemical reactions in the simulator</p>
+      </div>
+      @if (popularReactions().length > 0) {
+        <div class="reactions-grid">
+          @for (rxn of popularReactions(); track rxn._id) {
+            <a [routerLink]="'/lab'" [queryParams]="{ r1: rxn.reactants[0], r2: rxn.reactants[1] }" class="reaction-card glass-card">
+              <div class="rxn-type badge badge-secondary">{{ rxn.reactionType }}</div>
+              <div class="rxn-equation">
+                @for (r of rxn.reactants; track r; let last = $last) {
+                  <span class="rxn-chemical">{{ r }}</span>
+                  @if (!last) {
+                    <span class="rxn-plus">+</span>
+                  }
+                }
+              </div>
+              <div class="rxn-names">
+                {{ rxn.reactantNames.join(' + ') }}
+              </div>
+              <div class="rxn-arrow">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                  <path d="M5 12h14M12 5l7 7-7 7" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+              </div>
+            </a>
+          }
+        </div>
+      }
+    </div>
+  </section>
+
+  <!-- Chemical Categories -->
+  <section class="section categories-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Chemical <span class="text-gradient">Categories</span></h2>
+        <p>Browse our library organized by type</p>
+      </div>
+      <div class="categories-grid">
+        @for (cat of categories(); track cat.name) {
+          <a [routerLink]="'/chemicals'" [queryParams]="{ category: cat.name }" class="category-card glass-card">
+            <span class="cat-icon">{{ getCategoryIcon(cat.name) }}</span>
+            <h4>{{ cat.name }}</h4>
+            <span class="cat-count">{{ cat.count }} chemicals</span>
+          </a>
+        }
+      </div>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="section features-section">
+    <div class="container">
+      <div class="section-header">
+        <h2>Everything You <span class="text-gradient">Need</span></h2>
+        <p>Comprehensive chemistry tools in one place</p>
+      </div>
+      <div class="features-grid">
+        <a routerLink="/lab" class="feature-card glass-card">
+          <span class="feature-icon">⚗️</span>
+          <h4>Reaction Simulator</h4>
+          <p>Mix chemicals and see predicted reactions with balanced equations</p>
+        </a>
+        <a routerLink="/equation-balancer" class="feature-card glass-card">
+          <span class="feature-icon">⚖️</span>
+          <h4>Equation Balancer</h4>
+          <p>Balance any chemical equation automatically</p>
+        </a>
+        <a routerLink="/safety-checker" class="feature-card glass-card">
+          <span class="feature-icon">🛡️</span>
+          <h4>Safety Checker</h4>
+          <p>Check if your chemical combination is safe</p>
+        </a>
+        <a routerLink="/calculators" class="feature-card glass-card">
+          <span class="feature-icon">🧮</span>
+          <h4>Calculators</h4>
+          <p>Molar mass, molarity, pH, dilution, and more</p>
+        </a>
+        <a routerLink="/quiz" class="feature-card glass-card">
+          <span class="feature-icon">📝</span>
+          <h4>Chemistry Quiz</h4>
+          <p>Test your knowledge with interactive quizzes</p>
+        </a>
+        <a routerLink="/learn" class="feature-card glass-card">
+          <span class="feature-icon">📚</span>
+          <h4>Learning Center</h4>
+          <p>Explore topics from bonding to thermodynamics</p>
+        </a>
+      </div>
+    </div>
+  </section>
+</div>

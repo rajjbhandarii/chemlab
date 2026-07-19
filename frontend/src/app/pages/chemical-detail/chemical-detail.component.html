@@ -1,0 +1,160 @@
+<div class="page detail-page">
+  <div class="container">
+    @if (loading()) {
+      <app-loading-spinner></app-loading-spinner>
+    } @else if (error() || !chemical()) {
+      <div class="error-state glass">
+        <span>❌</span>
+        <h3>Chemical not found</h3>
+        <a routerLink="/chemicals" class="btn btn-primary">← Back to Library</a>
+      </div>
+    } @else {
+      <a routerLink="/chemicals" class="back-link">← Back to Chemical Library</a>
+
+      <!-- Header -->
+      <div class="detail-header glass">
+        <div class="header-info">
+          <span class="badge" [ngClass]="getCategoryClass(chemical()!.category)">{{ chemical()!.category }}</span>
+          <h1>{{ chemical()!.name }}</h1>
+          <p class="formula-large">{{ chemical()!.formula }}</p>
+        </div>
+        <div class="header-actions">
+          <a [routerLink]="'/lab'" [queryParams]="{ r1: chemical()!.formula }" class="btn btn-primary">
+            🧪 Use in Lab
+          </a>
+        </div>
+      </div>
+
+      <!-- Properties Grid -->
+      <div class="section-title">📊 Physical Properties</div>
+      <div class="properties-grid">
+        @if (chemical()!.molarMass) {
+          <div class="prop-card glass-card">
+            <span class="prop-label">Molar Mass</span>
+            <span class="prop-value">{{ chemical()!.molarMass }} g/mol</span>
+          </div>
+        }
+        @if (chemical()!.density.value) {
+          <div class="prop-card glass-card">
+            <span class="prop-label">Density</span>
+            <span class="prop-value">{{ chemical()!.density.value }} {{ chemical()!.density.unit }}</span>
+          </div>
+        }
+        @if (chemical()!.meltingPoint.value !== undefined) {
+          <div class="prop-card glass-card">
+            <span class="prop-label">Melting Point</span>
+            <span class="prop-value">{{ chemical()!.meltingPoint.value }} {{ chemical()!.meltingPoint.unit }}</span>
+          </div>
+        }
+        @if (chemical()!.boilingPoint.value !== undefined) {
+          <div class="prop-card glass-card">
+            <span class="prop-label">Boiling Point</span>
+            <span class="prop-value">{{ chemical()!.boilingPoint.value }} {{ chemical()!.boilingPoint.unit }}</span>
+          </div>
+        }
+        <div class="prop-card glass-card">
+          <span class="prop-label">Physical State</span>
+          <span class="prop-value">{{ chemical()!.physicalState }}</span>
+        </div>
+        <div class="prop-card glass-card">
+          <span class="prop-label">Color</span>
+          <span class="prop-value color-value">
+            <span class="color-dot" [style.background]="chemical()!.color === 'Colorless' ? 'transparent' : chemical()!.color"></span>
+            {{ chemical()!.color }}
+          </span>
+        </div>
+        <div class="prop-card glass-card">
+          <span class="prop-label">Odor</span>
+          <span class="prop-value">{{ chemical()!.odor }}</span>
+        </div>
+        <div class="prop-card glass-card">
+          <span class="prop-label">Solubility</span>
+          <span class="prop-value">{{ chemical()!.solubility }}</span>
+        </div>
+        @if (chemical()!.casNumber) {
+          <div class="prop-card glass-card">
+            <span class="prop-label">CAS Number</span>
+            <span class="prop-value">{{ chemical()!.casNumber }}</span>
+          </div>
+        }
+      </div>
+
+      <!-- Uses -->
+      @if (chemical()!.uses.length || chemical()!.industrialUses.length || chemical()!.labUses.length) {
+        <div class="section-title">🔧 Uses</div>
+        <div class="uses-grid">
+          @if (chemical()!.uses.length) {
+            <div class="uses-card glass">
+              <h4>General Uses</h4>
+              <ul>
+                @for (use of chemical()!.uses; track use) { <li>{{ use }}</li> }
+              </ul>
+            </div>
+          }
+          @if (chemical()!.industrialUses.length) {
+            <div class="uses-card glass">
+              <h4>Industrial Uses</h4>
+              <ul>
+                @for (use of chemical()!.industrialUses; track use) { <li>{{ use }}</li> }
+              </ul>
+            </div>
+          }
+          @if (chemical()!.labUses.length) {
+            <div class="uses-card glass">
+              <h4>Laboratory Uses</h4>
+              <ul>
+                @for (use of chemical()!.labUses; track use) { <li>{{ use }}</li> }
+              </ul>
+            </div>
+          }
+        </div>
+      }
+
+      <!-- Hazards -->
+      @if (chemical()!.hazards.length) {
+        <div class="section-title">⚠️ Hazards</div>
+        <div class="hazards-section glass">
+          <div class="hazard-badges">
+            @for (hazard of chemical()!.hazards; track hazard) {
+              <app-safety-badge [label]="hazard" severity="High" [type]="hazard"></app-safety-badge>
+            }
+          </div>
+        </div>
+      }
+
+      <!-- Storage -->
+      @if (chemical()!.storageInstructions) {
+        <div class="section-title">📦 Storage Instructions</div>
+        <div class="storage-section glass">
+          <p>{{ chemical()!.storageInstructions }}</p>
+        </div>
+      }
+
+      <!-- Facts -->
+      @if (chemical()!.facts.length) {
+        <div class="section-title">💡 Interesting Facts</div>
+        <div class="facts-section">
+          @for (fact of chemical()!.facts; track fact) {
+            <div class="fact-card glass">
+              <span class="fact-icon">💡</span>
+              <p>{{ fact }}</p>
+            </div>
+          }
+        </div>
+      }
+
+      <!-- Common Reactions -->
+      @if (chemical()!.commonReactions.length) {
+        <div class="section-title">⚗️ Common Reactions</div>
+        <div class="reactions-section">
+          @for (rxn of chemical()!.commonReactions; track rxn.equation) {
+            <div class="rxn-card glass-card">
+              <div class="equation-display">{{ rxn.equation }}</div>
+              <p>{{ rxn.description }}</p>
+            </div>
+          }
+        </div>
+      }
+    }
+  </div>
+</div>

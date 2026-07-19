@@ -1,0 +1,1276 @@
+[
+  {
+    "reactants": ["HCl", "NaOH"],
+    "reactantNames": ["Hydrochloric Acid", "Sodium Hydroxide"],
+    "products": [
+      { "name": "Sodium Chloride", "formula": "NaCl", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" }
+    ],
+    "balancedEquation": "HCl + NaOH → NaCl + H₂O",
+    "reactionType": "Neutralization",
+    "energy": "Exothermic",
+    "observations": ["Solution warms up", "No visible precipitate or gas", "pH changes towards 7"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Hydrochloric acid donates H⁺ ions and sodium hydroxide provides OH⁻ ions. The H⁺ and OH⁻ ions combine to form water (H₂O), while the Na⁺ and Cl⁻ ions remain in solution as sodium chloride (table salt). This is a classic acid-base neutralization reaction.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Corrosive", "severity": "Medium", "description": "Both HCl and NaOH are corrosive. Wear gloves and goggles." },
+      { "type": "Exothermic", "severity": "Low", "description": "Reaction releases heat." }
+    ],
+    "funFact": "This reaction produces ordinary table salt (NaCl) — the same salt you put on your food! Neutralization reactions like this happen in your stomach when you take an antacid.",
+    "isPopular": true
+  },
+  {
+    "reactants": ["AgNO₃", "NaCl"],
+    "reactantNames": ["Silver Nitrate", "Sodium Chloride"],
+    "products": [
+      { "name": "Silver Chloride", "formula": "AgCl", "physicalState": "Solid", "color": "White" },
+      { "name": "Sodium Nitrate", "formula": "NaNO₃", "physicalState": "Aqueous", "color": "Colorless" }
+    ],
+    "balancedEquation": "AgNO₃ + NaCl → AgCl↓ + NaNO₃",
+    "reactionType": "Double Displacement",
+    "energy": "Exothermic",
+    "observations": ["White curdy precipitate forms immediately", "Precipitate turns grey/purple in light"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Silver ions (Ag⁺) from silver nitrate combine with chloride ions (Cl⁻) from sodium chloride to form insoluble silver chloride, which precipitates out of solution as a white solid. This is a double displacement reaction driven by the formation of an insoluble product.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Staining", "severity": "Medium", "description": "Silver nitrate stains skin and clothing black." },
+      { "type": "Irritant", "severity": "Low", "description": "Silver nitrate is an irritant." }
+    ],
+    "funFact": "This reaction is used as a test for chloride ions in analytical chemistry. Silver chloride is also light-sensitive, which is why traditional photographic film is coated with silver halides!",
+    "isPopular": true
+  },
+  {
+    "reactants": ["Fe", "O₂"],
+    "reactantNames": ["Iron", "Oxygen"],
+    "products": [
+      { "name": "Iron(III) Oxide", "formula": "Fe₂O₃", "physicalState": "Solid", "color": "Reddish-brown" }
+    ],
+    "balancedEquation": "4Fe + 3O₂ → 2Fe₂O₃",
+    "reactionType": "Synthesis",
+    "energy": "Exothermic",
+    "observations": ["Reddish-brown rust forms", "Slow reaction at room temperature", "Fast and fiery with iron filings or steel wool"],
+    "conditions": { "required": false, "details": ["Moisture accelerates rusting"] },
+    "explanation": "Iron atoms lose electrons (are oxidized) and oxygen molecules gain electrons (are reduced). Each iron atom loses 3 electrons to form Fe³⁺, while each oxygen atom gains 2 electrons to form O²⁻. The ions combine to form iron(III) oxide, commonly known as rust.",
+    "dangerLevel": "Safe",
+    "safetyWarnings": [
+      { "type": "Flammable", "severity": "Medium", "description": "Steel wool burns vigorously in pure oxygen." }
+    ],
+    "funFact": "Rusting costs the global economy over $2.5 trillion annually. The Eiffel Tower requires 60 tons of paint every 7 years to protect it from rust!",
+    "isPopular": true
+  },
+  {
+    "reactants": ["CH₄", "O₂"],
+    "reactantNames": ["Methane", "Oxygen"],
+    "products": [
+      { "name": "Carbon Dioxide", "formula": "CO₂", "physicalState": "Gas", "color": "Colorless" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "CH₄ + 2O₂ → CO₂ + 2H₂O",
+    "reactionType": "Combustion",
+    "energy": "Exothermic",
+    "observations": ["Blue flame produced", "Heat released", "Water vapor visible", "No soot in complete combustion"],
+    "conditions": { "required": true, "details": ["Ignition source (spark or flame)"] },
+    "explanation": "Methane undergoes complete combustion in excess oxygen. The carbon in methane is oxidized to carbon dioxide and the hydrogen is oxidized to water. This is a highly exothermic reaction that releases 890 kJ/mol of energy, making methane an excellent fuel.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Flammable", "severity": "High", "description": "Methane is extremely flammable." },
+      { "type": "Explosive", "severity": "High", "description": "Methane-air mixtures (5-15%) are explosive." }
+    ],
+    "funFact": "Natural gas (mostly methane) provides about 24% of the world's energy. Methane is also a potent greenhouse gas — about 80 times more effective at trapping heat than CO₂ over a 20-year period.",
+    "isPopular": true
+  },
+  {
+    "reactants": ["CuSO₄", "NaOH"],
+    "reactantNames": ["Copper(II) Sulfate", "Sodium Hydroxide"],
+    "products": [
+      { "name": "Copper(II) Hydroxide", "formula": "Cu(OH)₂", "physicalState": "Solid", "color": "Blue" },
+      { "name": "Sodium Sulfate", "formula": "Na₂SO₄", "physicalState": "Aqueous", "color": "Colorless" }
+    ],
+    "balancedEquation": "CuSO₄ + 2NaOH → Cu(OH)₂↓ + Na₂SO₄",
+    "reactionType": "Double Displacement",
+    "energy": "Exothermic",
+    "observations": ["Pale blue precipitate forms immediately", "Solution may become warm"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Copper(II) ions (Cu²⁺) from copper sulfate combine with hydroxide ions (OH⁻) from sodium hydroxide to form insoluble copper(II) hydroxide, a blue gelatinous precipitate. The sodium and sulfate ions remain in solution.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Irritant", "severity": "Medium", "description": "Copper sulfate is harmful if swallowed and irritating to skin." },
+      { "type": "Corrosive", "severity": "Medium", "description": "Sodium hydroxide is corrosive." }
+    ],
+    "funFact": "When copper(II) hydroxide is heated, it decomposes to black copper(II) oxide — this color change from blue to black is a visually striking chemistry demonstration.",
+    "isPopular": true
+  },
+  {
+    "reactants": ["Zn", "HCl"],
+    "reactantNames": ["Zinc", "Hydrochloric Acid"],
+    "products": [
+      { "name": "Zinc Chloride", "formula": "ZnCl₂", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Hydrogen Gas", "formula": "H₂", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "Zn + 2HCl → ZnCl₂ + H₂↑",
+    "reactionType": "Single Displacement",
+    "energy": "Exothermic",
+    "observations": ["Vigorous bubbling/effervescence", "Zinc dissolves gradually", "Solution warms up", "Hydrogen gas can be collected"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Zinc is more reactive than hydrogen in the activity series, so it displaces hydrogen from hydrochloric acid. Zinc atoms are oxidized to Zn²⁺ ions, while H⁺ ions are reduced to H₂ gas. The hydrogen gas escapes as bubbles.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Flammable Gas", "severity": "High", "description": "Hydrogen gas produced is highly flammable. Keep away from flames." },
+      { "type": "Corrosive", "severity": "Medium", "description": "Hydrochloric acid is corrosive." }
+    ],
+    "funFact": "This reaction was historically used to fill hydrogen balloons. The hydrogen gas produced can be tested with a burning splint — it makes a 'squeaky pop' sound!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Fe", "CuSO₄"],
+    "reactantNames": ["Iron", "Copper(II) Sulfate"],
+    "products": [
+      { "name": "Iron(II) Sulfate", "formula": "FeSO₄", "physicalState": "Aqueous", "color": "Pale green" },
+      { "name": "Copper", "formula": "Cu", "physicalState": "Solid", "color": "Reddish-brown" }
+    ],
+    "balancedEquation": "Fe + CuSO₄ → FeSO₄ + Cu",
+    "reactionType": "Single Displacement",
+    "energy": "Exothermic",
+    "observations": ["Iron nail gets coated with reddish-brown copper", "Blue solution gradually turns pale green", "Iron slowly dissolves"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Iron is more reactive than copper in the activity series. Iron atoms lose 2 electrons and are oxidized to Fe²⁺ ions, while Cu²⁺ ions gain those electrons and are reduced to metallic copper, which deposits on the iron surface.",
+    "dangerLevel": "Safe",
+    "safetyWarnings": [
+      { "type": "Irritant", "severity": "Low", "description": "Copper sulfate is an irritant. Avoid ingestion." }
+    ],
+    "funFact": "This reaction was used in ancient China and Spain to extract copper from solution — a process called cementation. It's one of the earliest known examples of applied chemistry!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["H₂SO₄", "NaOH"],
+    "reactantNames": ["Sulfuric Acid", "Sodium Hydroxide"],
+    "products": [
+      { "name": "Sodium Sulfate", "formula": "Na₂SO₄", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" }
+    ],
+    "balancedEquation": "H₂SO₄ + 2NaOH → Na₂SO₄ + 2H₂O",
+    "reactionType": "Neutralization",
+    "energy": "Exothermic",
+    "observations": ["Solution becomes warm", "No visible change in clear solutions", "pH approaches 7 at equivalence point"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Sulfuric acid is a diprotic acid, meaning it can donate two H⁺ ions. Each H⁺ combines with an OH⁻ from NaOH to form water. Two moles of NaOH are needed to fully neutralize one mole of H₂SO₄. The Na⁺ and SO₄²⁻ ions form sodium sulfate.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Corrosive", "severity": "High", "description": "Both reagents are highly corrosive." },
+      { "type": "Exothermic", "severity": "Medium", "description": "Significant heat is released." }
+    ],
+    "funFact": "The heat released in this neutralization can be measured using a calorimeter and is approximately 57.3 kJ/mol per mole of water formed — a constant for strong acid-strong base neutralizations.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["HNO₃", "NaOH"],
+    "reactantNames": ["Nitric Acid", "Sodium Hydroxide"],
+    "products": [
+      { "name": "Sodium Nitrate", "formula": "NaNO₃", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" }
+    ],
+    "balancedEquation": "HNO₃ + NaOH → NaNO₃ + H₂O",
+    "reactionType": "Neutralization",
+    "energy": "Exothermic",
+    "observations": ["Solution warms up", "No precipitate", "pH changes towards 7"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Nitric acid donates H⁺ to sodium hydroxide's OH⁻ forming water. The sodium and nitrate ions form sodium nitrate in solution. This is a typical strong acid-strong base neutralization.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Corrosive", "severity": "High", "description": "Both reagents are corrosive." },
+      { "type": "Oxidizer", "severity": "Medium", "description": "Nitric acid is a strong oxidizer." }
+    ],
+    "funFact": "Sodium nitrate (the product) is historically known as 'Chile saltpeter' and was mined extensively in the Atacama Desert for use in explosives and fertilizers.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["CaCO₃", "HCl"],
+    "reactantNames": ["Calcium Carbonate", "Hydrochloric Acid"],
+    "products": [
+      { "name": "Calcium Chloride", "formula": "CaCl₂", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" },
+      { "name": "Carbon Dioxide", "formula": "CO₂", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "CaCO₃ + 2HCl → CaCl₂ + H₂O + CO₂↑",
+    "reactionType": "Acid-Carbonate",
+    "energy": "Exothermic",
+    "observations": ["Vigorous effervescence (bubbling)", "Solid calcium carbonate dissolves", "CO₂ gas produced turns limewater milky"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "The acid reacts with the carbonate ion (CO₃²⁻), which is a base. The carbonic acid formed (H₂CO₃) immediately decomposes into water and carbon dioxide gas. The calcium and chloride ions remain in solution.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Corrosive", "severity": "Medium", "description": "Hydrochloric acid is corrosive." }
+    ],
+    "funFact": "This is the reaction that occurs when acid rain dissolves limestone buildings and statues. It's also how antacid tablets (containing CaCO₃) neutralize excess stomach acid!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["NaHCO₃", "HCl"],
+    "reactantNames": ["Sodium Bicarbonate", "Hydrochloric Acid"],
+    "products": [
+      { "name": "Sodium Chloride", "formula": "NaCl", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" },
+      { "name": "Carbon Dioxide", "formula": "CO₂", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "NaHCO₃ + HCl → NaCl + H₂O + CO₂↑",
+    "reactionType": "Acid-Carbonate",
+    "energy": "Exothermic",
+    "observations": ["Vigorous fizzing", "Gas bubbles produced", "Solution may foam"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "The hydrogen ion from HCl reacts with the bicarbonate ion to form carbonic acid, which immediately decomposes to water and carbon dioxide. The fizzing is caused by the rapid release of CO₂ gas.",
+    "dangerLevel": "Safe",
+    "safetyWarnings": [],
+    "funFact": "This is essentially what happens inside a baking soda volcano! It's also the reaction in effervescent antacid tablets and in baking when baking soda meets an acidic ingredient.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["NaHCO₃", "CH₃COOH"],
+    "reactantNames": ["Sodium Bicarbonate", "Acetic Acid"],
+    "products": [
+      { "name": "Sodium Acetate", "formula": "CH₃COONa", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" },
+      { "name": "Carbon Dioxide", "formula": "CO₂", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "NaHCO₃ + CH₃COOH → CH₃COONa + H₂O + CO₂↑",
+    "reactionType": "Acid-Carbonate",
+    "energy": "Endothermic",
+    "observations": ["Vigorous fizzing and foaming", "Solution cools slightly", "CO₂ gas released"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Acetic acid (vinegar) reacts with sodium bicarbonate (baking soda). The H⁺ from acetic acid reacts with bicarbonate to form unstable carbonic acid, which decomposes to CO₂ and water. This is actually slightly endothermic — the solution cools down.",
+    "dangerLevel": "Safe",
+    "safetyWarnings": [],
+    "funFact": "This is the classic 'baking soda and vinegar volcano' reaction! It's one of the most popular science fair experiments and is completely safe to do at home.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Mg", "O₂"],
+    "reactantNames": ["Magnesium", "Oxygen"],
+    "products": [
+      { "name": "Magnesium Oxide", "formula": "MgO", "physicalState": "Solid", "color": "White" }
+    ],
+    "balancedEquation": "2Mg + O₂ → 2MgO",
+    "reactionType": "Synthesis",
+    "energy": "Exothermic",
+    "observations": ["Brilliant white flame", "Intense white light produced", "White ash/powder remains", "Do not look directly at the flame"],
+    "conditions": { "required": true, "details": ["Ignition (heating with a Bunsen burner)"] },
+    "explanation": "Magnesium is oxidized from Mg(0) to Mg²⁺, losing 2 electrons. Oxygen is reduced from O(0) to O²⁻, gaining 2 electrons. The reaction is highly exothermic, producing an intense white light as the magnesium burns. The product is white magnesium oxide powder.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Intense Light", "severity": "High", "description": "Do NOT look directly at burning magnesium — it can damage your eyes." },
+      { "type": "Flammable", "severity": "High", "description": "Magnesium burns at very high temperatures and is difficult to extinguish." }
+    ],
+    "funFact": "Burning magnesium was used in early camera flash bulbs and is still used in military flares and fireworks. The flame reaches temperatures of about 3,100°C!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Na", "H₂O"],
+    "reactantNames": ["Sodium", "Water"],
+    "products": [
+      { "name": "Sodium Hydroxide", "formula": "NaOH", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Hydrogen Gas", "formula": "H₂", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "2Na + 2H₂O → 2NaOH + H₂↑",
+    "reactionType": "Single Displacement",
+    "energy": "Exothermic",
+    "observations": ["Sodium moves rapidly on water surface", "Fizzing and hissing sounds", "May catch fire (lilac/yellow flame)", "Solution becomes alkaline (turns phenolphthalein pink)"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Sodium is highly reactive and readily gives up its single valence electron to water. The sodium is oxidized to Na⁺ while water is reduced, releasing hydrogen gas and forming hydroxide ions. The reaction is so exothermic that with larger pieces of sodium, the hydrogen gas may ignite.",
+    "dangerLevel": "Highly Dangerous",
+    "safetyWarnings": [
+      { "type": "Explosive", "severity": "Critical", "description": "Larger pieces can explode violently. Use only very small pieces." },
+      { "type": "Flammable", "severity": "Critical", "description": "Hydrogen gas produced is flammable and may ignite." },
+      { "type": "Corrosive", "severity": "High", "description": "NaOH solution produced is corrosive." }
+    ],
+    "funFact": "When a larger piece of sodium is thrown into water, it can react so violently that it explodes! Chemistry teachers typically use only tiny pieces (2-3mm) for this demonstration.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["K", "H₂O"],
+    "reactantNames": ["Potassium", "Water"],
+    "products": [
+      { "name": "Potassium Hydroxide", "formula": "KOH", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Hydrogen Gas", "formula": "H₂", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "2K + 2H₂O → 2KOH + H₂↑",
+    "reactionType": "Single Displacement",
+    "energy": "Exothermic",
+    "observations": ["Immediately catches fire with lilac/violet flame", "Moves violently on water surface", "May explode with larger pieces", "Strong alkaline solution formed"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Potassium is even more reactive than sodium. It instantly reacts with water, and the hydrogen gas produced is always ignited by the heat of the reaction. The characteristic lilac flame comes from excited potassium atoms.",
+    "dangerLevel": "Highly Dangerous",
+    "safetyWarnings": [
+      { "type": "Explosive", "severity": "Critical", "description": "Potassium reacts explosively with water. Extreme caution required." },
+      { "type": "Flammable", "severity": "Critical", "description": "Hydrogen ignites immediately." },
+      { "type": "Corrosive", "severity": "High", "description": "KOH is highly corrosive." }
+    ],
+    "funFact": "Potassium reacts so violently with water that it always catches fire, producing a beautiful lilac/violet flame. This is why alkali metals are stored under mineral oil!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Zn", "CuSO₄"],
+    "reactantNames": ["Zinc", "Copper(II) Sulfate"],
+    "products": [
+      { "name": "Zinc Sulfate", "formula": "ZnSO₄", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Copper", "formula": "Cu", "physicalState": "Solid", "color": "Reddish-brown" }
+    ],
+    "balancedEquation": "Zn + CuSO₄ → ZnSO₄ + Cu",
+    "reactionType": "Single Displacement",
+    "energy": "Exothermic",
+    "observations": ["Blue solution turns colorless", "Reddish-brown copper deposits on zinc", "Zinc gradually dissolves"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Zinc is above copper in the reactivity series, so it can displace copper from its salt solution. Zinc atoms are oxidized (Zn → Zn²⁺ + 2e⁻), while copper ions are reduced (Cu²⁺ + 2e⁻ → Cu). The blue color fades as Cu²⁺ ions are removed from solution.",
+    "dangerLevel": "Safe",
+    "safetyWarnings": [
+      { "type": "Irritant", "severity": "Low", "description": "Copper sulfate is an irritant." }
+    ],
+    "funFact": "This reaction demonstrates the principle behind the Daniell cell, one of the first practical batteries invented in 1836 by John Frederic Daniell.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Pb(NO₃)₂", "KI"],
+    "reactantNames": ["Lead(II) Nitrate", "Potassium Iodide"],
+    "products": [
+      { "name": "Lead(II) Iodide", "formula": "PbI₂", "physicalState": "Solid", "color": "Bright yellow" },
+      { "name": "Potassium Nitrate", "formula": "KNO₃", "physicalState": "Aqueous", "color": "Colorless" }
+    ],
+    "balancedEquation": "Pb(NO₃)₂ + 2KI → PbI₂↓ + 2KNO₃",
+    "reactionType": "Double Displacement",
+    "energy": "Exothermic",
+    "observations": ["Brilliant yellow precipitate forms immediately", "When heated and cooled slowly, golden crystals form (golden rain)"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Lead(II) ions combine with iodide ions to form lead(II) iodide, which is insoluble in cold water and precipitates as a bright yellow solid. This is a classic double displacement (metathesis) reaction.",
+    "dangerLevel": "Unsafe",
+    "safetyWarnings": [
+      { "type": "Toxic", "severity": "High", "description": "Lead compounds are toxic. Avoid skin contact and ingestion." },
+      { "type": "Environmental", "severity": "High", "description": "Lead is a persistent environmental pollutant. Dispose properly." }
+    ],
+    "funFact": "The 'Golden Rain' experiment is one of the most beautiful demonstrations in chemistry. When a hot solution of PbI₂ is slowly cooled, shimmering golden-yellow crystals form, resembling falling golden rain!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["H₂", "O₂"],
+    "reactantNames": ["Hydrogen", "Oxygen"],
+    "products": [
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" }
+    ],
+    "balancedEquation": "2H₂ + O₂ → 2H₂O",
+    "reactionType": "Combustion",
+    "energy": "Exothermic",
+    "observations": ["Burns with a pale blue, almost invisible flame", "Water droplets form on cool surfaces", "Loud pop if ignited in a test tube"],
+    "conditions": { "required": true, "details": ["Ignition source (spark or flame)"] },
+    "explanation": "Hydrogen gas combusts in oxygen to form water. Each hydrogen molecule provides 2 electrons for bonding with oxygen. This is an extremely exothermic reaction (-286 kJ/mol) and is the basis for hydrogen fuel cells.",
+    "dangerLevel": "Highly Dangerous",
+    "safetyWarnings": [
+      { "type": "Explosive", "severity": "Critical", "description": "Hydrogen-oxygen mixtures (4-75% H₂ in air) are explosive." },
+      { "type": "Flammable", "severity": "Critical", "description": "Hydrogen is extremely flammable." }
+    ],
+    "funFact": "The Hindenburg disaster in 1937 involved the combustion of hydrogen. Today, hydrogen fuel cells use this reaction in a controlled manner to produce electricity for cars and spacecraft!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["C₂H₅OH", "O₂"],
+    "reactantNames": ["Ethanol", "Oxygen"],
+    "products": [
+      { "name": "Carbon Dioxide", "formula": "CO₂", "physicalState": "Gas", "color": "Colorless" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "C₂H₅OH + 3O₂ → 2CO₂ + 3H₂O",
+    "reactionType": "Combustion",
+    "energy": "Exothermic",
+    "observations": ["Burns with a pale blue, nearly invisible flame", "Heat released", "Clean combustion (no soot)"],
+    "conditions": { "required": true, "details": ["Ignition source"] },
+    "explanation": "Ethanol undergoes complete combustion in excess oxygen. The carbon atoms are oxidized to CO₂ and the hydrogen atoms are oxidized to H₂O. Ethanol is used as a biofuel because it burns cleanly.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Flammable", "severity": "High", "description": "Ethanol is highly flammable." },
+      { "type": "Invisible Flame", "severity": "Medium", "description": "Ethanol flames can be nearly invisible in daylight." }
+    ],
+    "funFact": "Ethanol flames are nearly invisible in daylight, which makes ethanol fires very dangerous in laboratory and racing settings. Some racing teams have learned this the hard way!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["H₂O₂"],
+    "reactantNames": ["Hydrogen Peroxide"],
+    "products": [
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" },
+      { "name": "Oxygen Gas", "formula": "O₂", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "2H₂O₂ → 2H₂O + O₂↑",
+    "reactionType": "Decomposition",
+    "energy": "Exothermic",
+    "observations": ["Bubbles of oxygen gas", "Rapid foaming with catalyst (MnO₂)", "Solution warms up", "Glowing splint relights in oxygen"],
+    "conditions": { "required": true, "details": ["Catalyst (MnO₂, KI, or catalase enzyme)"] },
+    "explanation": "Hydrogen peroxide is thermodynamically unstable and decomposes into water and oxygen. This reaction is slow normally but greatly accelerated by catalysts like manganese dioxide. In biological systems, the enzyme catalase rapidly decomposes H₂O₂ produced during metabolism.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Oxidizer", "severity": "Medium", "description": "Hydrogen peroxide is a strong oxidizer at high concentrations." }
+    ],
+    "funFact": "The 'Elephant Toothpaste' demonstration uses this reaction with concentrated H₂O₂ and KI catalyst plus dish soap to create a massive foam eruption!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Al", "HCl"],
+    "reactantNames": ["Aluminum", "Hydrochloric Acid"],
+    "products": [
+      { "name": "Aluminum Chloride", "formula": "AlCl₃", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Hydrogen Gas", "formula": "H₂", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "2Al + 6HCl → 2AlCl₃ + 3H₂↑",
+    "reactionType": "Single Displacement",
+    "energy": "Exothermic",
+    "observations": ["Vigorous effervescence", "Aluminum foil dissolves", "Solution heats up significantly", "Hydrogen gas evolved"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Aluminum is above hydrogen in the activity series, so it displaces hydrogen from hydrochloric acid. Each aluminum atom loses 3 electrons (Al → Al³⁺ + 3e⁻). The protective oxide layer on aluminum must first be dissolved by the acid before the reaction proceeds vigorously.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Flammable Gas", "severity": "High", "description": "Hydrogen gas is produced and is highly flammable." },
+      { "type": "Corrosive", "severity": "Medium", "description": "HCl is corrosive." },
+      { "type": "Exothermic", "severity": "Medium", "description": "Reaction generates significant heat." }
+    ],
+    "funFact": "Aluminum foil reacting with drain cleaner (which contains NaOH or HCl) can produce enough hydrogen gas to inflate a balloon — but this is dangerous and should only be done under supervision!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Na₂CO₃", "HCl"],
+    "reactantNames": ["Sodium Carbonate", "Hydrochloric Acid"],
+    "products": [
+      { "name": "Sodium Chloride", "formula": "NaCl", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" },
+      { "name": "Carbon Dioxide", "formula": "CO₂", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "Na₂CO₃ + 2HCl → 2NaCl + H₂O + CO₂↑",
+    "reactionType": "Acid-Carbonate",
+    "energy": "Exothermic",
+    "observations": ["Effervescence as CO₂ is released", "Solid dissolves", "Solution may foam"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "The carbonate ion reacts with the H⁺ ions from HCl to form carbonic acid (H₂CO₃), which immediately decomposes to water and carbon dioxide gas. Two moles of HCl are needed for each mole of Na₂CO₃.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Corrosive", "severity": "Medium", "description": "HCl is corrosive." }
+    ],
+    "funFact": "This reaction is used in fire extinguishers — the CO₂ produced smothers flames by displacing oxygen.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Ba(OH)₂", "H₂SO₄"],
+    "reactantNames": ["Barium Hydroxide", "Sulfuric Acid"],
+    "products": [
+      { "name": "Barium Sulfate", "formula": "BaSO₄", "physicalState": "Solid", "color": "White" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" }
+    ],
+    "balancedEquation": "Ba(OH)₂ + H₂SO₄ → BaSO₄↓ + 2H₂O",
+    "reactionType": "Neutralization",
+    "energy": "Exothermic",
+    "observations": ["Dense white precipitate forms immediately", "Solution becomes cloudy"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "This is both a neutralization reaction (acid + base → salt + water) and a precipitation reaction. Barium sulfate is one of the most insoluble salts known, making this reaction essentially irreversible.",
+    "dangerLevel": "Unsafe",
+    "safetyWarnings": [
+      { "type": "Toxic", "severity": "High", "description": "Barium hydroxide is toxic." },
+      { "type": "Corrosive", "severity": "High", "description": "Sulfuric acid is corrosive." }
+    ],
+    "funFact": "Barium sulfate is so insoluble that it's actually safe to swallow (as a 'barium meal') for X-ray imaging of the digestive tract, even though other barium compounds are toxic!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Ca(OH)₂", "CO₂"],
+    "reactantNames": ["Calcium Hydroxide", "Carbon Dioxide"],
+    "products": [
+      { "name": "Calcium Carbonate", "formula": "CaCO₃", "physicalState": "Solid", "color": "White" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" }
+    ],
+    "balancedEquation": "Ca(OH)₂ + CO₂ → CaCO₃↓ + H₂O",
+    "reactionType": "Precipitation",
+    "energy": "Exothermic",
+    "observations": ["Clear limewater turns milky/cloudy", "White precipitate of CaCO₃"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Carbon dioxide reacts with calcium hydroxide (limewater) to form insoluble calcium carbonate, which appears as a milky white precipitate. This is the classic test for carbon dioxide gas.",
+    "dangerLevel": "Safe",
+    "safetyWarnings": [
+      { "type": "Irritant", "severity": "Low", "description": "Calcium hydroxide is mildly irritating." }
+    ],
+    "funFact": "This reaction is used in the 'limewater test' for CO₂ — one of the most commonly performed tests in school chemistry. Exhaled breath turns limewater milky because it contains about 4% CO₂.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["NH₃", "HCl"],
+    "reactantNames": ["Ammonia", "Hydrochloric Acid"],
+    "products": [
+      { "name": "Ammonium Chloride", "formula": "NH₄Cl", "physicalState": "Solid", "color": "White" }
+    ],
+    "balancedEquation": "NH₃ + HCl → NH₄Cl",
+    "reactionType": "Synthesis",
+    "energy": "Exothermic",
+    "observations": ["Dense white smoke/fumes form", "No liquid product", "Smoke rings may form in air"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Ammonia gas and hydrogen chloride gas react to form tiny crystals of ammonium chloride, which appear as white smoke. The nitrogen's lone pair accepts a proton (H⁺) from HCl, forming the ammonium ion (NH₄⁺) which pairs with the chloride ion (Cl⁻).",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Toxic Gas", "severity": "High", "description": "Both ammonia and HCl gases are toxic and irritating." },
+      { "type": "Irritant", "severity": "Medium", "description": "The fumes are irritating to eyes and respiratory system." }
+    ],
+    "funFact": "This reaction produces dramatic white smoke when ammonia solution is held near concentrated HCl. It was once used as a 'smoke signal' effect in chemistry magic shows!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Mg", "HCl"],
+    "reactantNames": ["Magnesium", "Hydrochloric Acid"],
+    "products": [
+      { "name": "Magnesium Chloride", "formula": "MgCl₂", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Hydrogen Gas", "formula": "H₂", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "Mg + 2HCl → MgCl₂ + H₂↑",
+    "reactionType": "Single Displacement",
+    "energy": "Exothermic",
+    "observations": ["Vigorous effervescence", "Magnesium ribbon dissolves rapidly", "Solution becomes warm", "Hydrogen gas can be collected"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Magnesium is a reactive metal that sits above hydrogen in the activity series. It readily gives up its two valence electrons (Mg → Mg²⁺ + 2e⁻), and the H⁺ ions from HCl gain these electrons to form H₂ gas.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Flammable Gas", "severity": "High", "description": "Hydrogen gas is flammable." },
+      { "type": "Corrosive", "severity": "Medium", "description": "HCl is corrosive." }
+    ],
+    "funFact": "This reaction is so vigorous with magnesium that it's often used in classroom demonstrations. The hydrogen produced can be ignited with a 'squeaky pop' test!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["FeCl₃", "NaOH"],
+    "reactantNames": ["Iron(III) Chloride", "Sodium Hydroxide"],
+    "products": [
+      { "name": "Iron(III) Hydroxide", "formula": "Fe(OH)₃", "physicalState": "Solid", "color": "Rusty brown" },
+      { "name": "Sodium Chloride", "formula": "NaCl", "physicalState": "Aqueous", "color": "Colorless" }
+    ],
+    "balancedEquation": "FeCl₃ + 3NaOH → Fe(OH)₃↓ + 3NaCl",
+    "reactionType": "Double Displacement",
+    "energy": "Exothermic",
+    "observations": ["Rusty brown precipitate forms immediately", "Gelatinous texture"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Iron(III) ions (Fe³⁺) combine with hydroxide ions (OH⁻) to form insoluble iron(III) hydroxide, a rusty brown gelatinous precipitate. This is a typical precipitation reaction and is used to identify Fe³⁺ ions in qualitative analysis.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Corrosive", "severity": "Medium", "description": "NaOH is corrosive. FeCl₃ solution is irritating." }
+    ],
+    "funFact": "Iron(III) hydroxide is the main component of rust! The brown color is the same as the rust you see on old cars and iron structures.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["FeSO₄", "NaOH"],
+    "reactantNames": ["Iron(II) Sulfate", "Sodium Hydroxide"],
+    "products": [
+      { "name": "Iron(II) Hydroxide", "formula": "Fe(OH)₂", "physicalState": "Solid", "color": "Green" },
+      { "name": "Sodium Sulfate", "formula": "Na₂SO₄", "physicalState": "Aqueous", "color": "Colorless" }
+    ],
+    "balancedEquation": "FeSO₄ + 2NaOH → Fe(OH)₂↓ + Na₂SO₄",
+    "reactionType": "Double Displacement",
+    "energy": "Exothermic",
+    "observations": ["Green gelatinous precipitate forms", "Precipitate darkens on exposure to air (oxidizes to Fe(OH)₃)"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Iron(II) ions (Fe²⁺) combine with hydroxide ions to form insoluble iron(II) hydroxide, a green gelatinous precipitate. On exposure to air, Fe²⁺ is oxidized to Fe³⁺, and the precipitate gradually changes from green to brown.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Corrosive", "severity": "Medium", "description": "NaOH is corrosive." }
+    ],
+    "funFact": "You can watch chemistry happen in real-time: the green Fe(OH)₂ precipitate slowly turns brown as it oxidizes in air to Fe(OH)₃. This is essentially watching iron 'rust' in fast-forward!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["BaCl₂", "Na₂SO₄"],
+    "reactantNames": ["Barium Chloride", "Sodium Sulfate"],
+    "products": [
+      { "name": "Barium Sulfate", "formula": "BaSO₄", "physicalState": "Solid", "color": "White" },
+      { "name": "Sodium Chloride", "formula": "NaCl", "physicalState": "Aqueous", "color": "Colorless" }
+    ],
+    "balancedEquation": "BaCl₂ + Na₂SO₄ → BaSO₄↓ + 2NaCl",
+    "reactionType": "Double Displacement",
+    "energy": "Exothermic",
+    "observations": ["Dense white precipitate forms immediately", "Precipitate is insoluble in acids"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Barium ions (Ba²⁺) and sulfate ions (SO₄²⁻) combine to form barium sulfate, which is extremely insoluble in water (Ksp = 1.1 × 10⁻¹⁰). The reaction is used as the standard test for sulfate ions.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Toxic", "severity": "High", "description": "Barium chloride is toxic if ingested." }
+    ],
+    "funFact": "The precipitate BaSO₄ is so insoluble that it's insoluble even in strong acids — unlike most precipitates. This is why it's used as a definitive test for sulfate ions.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["N₂", "H₂"],
+    "reactantNames": ["Nitrogen", "Hydrogen"],
+    "products": [
+      { "name": "Ammonia", "formula": "NH₃", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "N₂ + 3H₂ ⇌ 2NH₃",
+    "reactionType": "Synthesis",
+    "energy": "Exothermic",
+    "observations": ["No visible change at room temperature", "Requires extreme conditions to proceed"],
+    "conditions": { "required": true, "details": ["High pressure (150-200 atm)", "High temperature (400-500°C)", "Iron catalyst with potassium hydroxide promoter"] },
+    "explanation": "The Haber-Bosch process combines atmospheric nitrogen with hydrogen gas to produce ammonia. The triple bond in N₂ is very strong (945 kJ/mol), requiring extreme conditions and a catalyst to break. The reaction is reversible, so Le Chatelier's principle is applied to maximize yield.",
+    "dangerLevel": "Safe",
+    "safetyWarnings": [
+      { "type": "High Pressure", "severity": "High", "description": "Industrial process operates at very high pressures." },
+      { "type": "Toxic Product", "severity": "Medium", "description": "Ammonia is toxic in high concentrations." }
+    ],
+    "funFact": "The Haber-Bosch process is arguably the most important chemical reaction in human history — it feeds nearly half the world's population through fertilizer production. Fritz Haber won the Nobel Prize for this in 1918.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Cu", "HNO₃"],
+    "reactantNames": ["Copper", "Nitric Acid"],
+    "products": [
+      { "name": "Copper(II) Nitrate", "formula": "Cu(NO₃)₂", "physicalState": "Aqueous", "color": "Blue" },
+      { "name": "Nitrogen Dioxide", "formula": "NO₂", "physicalState": "Gas", "color": "Brown" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" }
+    ],
+    "balancedEquation": "Cu + 4HNO₃(conc.) → Cu(NO₃)₂ + 2NO₂↑ + 2H₂O",
+    "reactionType": "Redox",
+    "energy": "Exothermic",
+    "observations": ["Copper dissolves", "Solution turns blue/green", "Brown toxic fumes (NO₂) released", "Vigorous reaction"],
+    "conditions": { "required": false, "details": ["Concentrated nitric acid for this equation"] },
+    "explanation": "Copper does not react with ordinary acids (HCl, H₂SO₄ dilute) because it's below hydrogen in the activity series. However, nitric acid acts as an oxidizing acid. The NO₃⁻ ion oxidizes copper to Cu²⁺, while nitrogen is reduced from +5 to +4 (forming NO₂).",
+    "dangerLevel": "Highly Dangerous",
+    "safetyWarnings": [
+      { "type": "Toxic Gas", "severity": "Critical", "description": "Brown NO₂ fumes are highly toxic. Perform only in a fume hood." },
+      { "type": "Corrosive", "severity": "High", "description": "Concentrated nitric acid is extremely corrosive." }
+    ],
+    "funFact": "This reaction demonstrates that nitric acid is special — it can dissolve copper (and many other metals) that regular acids cannot, because it acts as an oxidizing acid rather than relying on H⁺ ions alone.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["C", "O₂"],
+    "reactantNames": ["Carbon", "Oxygen"],
+    "products": [
+      { "name": "Carbon Dioxide", "formula": "CO₂", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "C + O₂ → CO₂",
+    "reactionType": "Combustion",
+    "energy": "Exothermic",
+    "observations": ["Carbon glows red/orange", "Heat released", "Colorless CO₂ gas produced"],
+    "conditions": { "required": true, "details": ["Ignition (heating)"] },
+    "explanation": "Carbon is oxidized from 0 to +4 oxidation state, while oxygen is reduced from 0 to -2. This is complete combustion of carbon, producing carbon dioxide. With insufficient oxygen, incomplete combustion produces carbon monoxide (CO) instead.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Flammable", "severity": "Medium", "description": "Carbon can burn at high temperatures." }
+    ],
+    "funFact": "This same reaction powers most coal-fired power plants. Coal is primarily carbon, and burning it in air produces CO₂ — a major contributor to climate change.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["S", "O₂"],
+    "reactantNames": ["Sulfur", "Oxygen"],
+    "products": [
+      { "name": "Sulfur Dioxide", "formula": "SO₂", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "S + O₂ → SO₂",
+    "reactionType": "Combustion",
+    "energy": "Exothermic",
+    "observations": ["Blue flame", "Choking, pungent smell of SO₂", "Burnt match smell"],
+    "conditions": { "required": true, "details": ["Ignition"] },
+    "explanation": "Sulfur is oxidized from 0 to +4, while oxygen is reduced from 0 to -2. Sulfur burns with a characteristic blue flame in air, producing sulfur dioxide gas which has a strong, choking odor.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Toxic Gas", "severity": "High", "description": "SO₂ is toxic and irritating. Perform in fume hood." }
+    ],
+    "funFact": "Sulfur burns with a beautiful blue flame! In Indonesia's Ijen volcano, sulfur burns at night creating an ethereal 'blue fire' — a popular tourist attraction.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Fe", "S"],
+    "reactantNames": ["Iron", "Sulfur"],
+    "products": [
+      { "name": "Iron(II) Sulfide", "formula": "FeS", "physicalState": "Solid", "color": "Black" }
+    ],
+    "balancedEquation": "Fe + S → FeS",
+    "reactionType": "Synthesis",
+    "energy": "Exothermic",
+    "observations": ["Mixture glows red when heated", "Exothermic reaction continues without further heating", "Black solid product formed", "Cannot separate with a magnet (unlike the mixture)"],
+    "conditions": { "required": true, "details": ["Heating (to initiate)"] },
+    "explanation": "Iron and sulfur combine in a synthesis reaction to form iron(II) sulfide. Unlike a mixture of iron and sulfur (which can be separated by a magnet), the compound FeS has completely different properties — it's non-magnetic, black, and reacts with acids to produce H₂S gas.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Toxic Gas Risk", "severity": "Medium", "description": "If FeS contacts acid, toxic H₂S gas is produced." },
+      { "type": "Exothermic", "severity": "Medium", "description": "Reaction is very exothermic once started." }
+    ],
+    "funFact": "This is a classic demonstration of the difference between a mixture and a compound. A mixture of iron and sulfur can be separated with a magnet, but once they react, the product (FeS) is non-magnetic!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["CaO", "H₂O"],
+    "reactantNames": ["Calcium Oxide", "Water"],
+    "products": [
+      { "name": "Calcium Hydroxide", "formula": "Ca(OH)₂", "physicalState": "Solid", "color": "White" }
+    ],
+    "balancedEquation": "CaO + H₂O → Ca(OH)₂",
+    "reactionType": "Synthesis",
+    "energy": "Exothermic",
+    "observations": ["Considerable heat evolved", "Steam may be produced", "Solid expands and crumbles", "Solution is alkaline"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Calcium oxide (quicklime) reacts vigorously with water in an exothermic reaction called 'slaking'. The oxide ion (O²⁻) reacts with water to form two hydroxide ions. The heat released can be enough to boil the water.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Exothermic", "severity": "High", "description": "Generates intense heat — can cause burns." },
+      { "type": "Corrosive", "severity": "Medium", "description": "Both quicklime and slaked lime are corrosive." }
+    ],
+    "funFact": "This reaction generates so much heat that it was used to heat food in self-heating cans! Military MREs (Meals Ready to Eat) use CaO + H₂O heaters to warm food in the field.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["KOH", "HCl"],
+    "reactantNames": ["Potassium Hydroxide", "Hydrochloric Acid"],
+    "products": [
+      { "name": "Potassium Chloride", "formula": "KCl", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" }
+    ],
+    "balancedEquation": "KOH + HCl → KCl + H₂O",
+    "reactionType": "Neutralization",
+    "energy": "Exothermic",
+    "observations": ["Solution warms up", "No visible change in clear solutions"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "A typical strong acid-strong base neutralization. The H⁺ from HCl combines with OH⁻ from KOH to form water, while K⁺ and Cl⁻ form potassium chloride.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Corrosive", "severity": "Medium", "description": "Both reagents are corrosive." }
+    ],
+    "funFact": "Potassium chloride (the product) is commonly used as a salt substitute for people on low-sodium diets. It tastes salty but with a slightly bitter aftertaste.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["AgNO₃", "KBr"],
+    "reactantNames": ["Silver Nitrate", "Potassium Bromide"],
+    "products": [
+      { "name": "Silver Bromide", "formula": "AgBr", "physicalState": "Solid", "color": "Pale yellow" },
+      { "name": "Potassium Nitrate", "formula": "KNO₃", "physicalState": "Aqueous", "color": "Colorless" }
+    ],
+    "balancedEquation": "AgNO₃ + KBr → AgBr↓ + KNO₃",
+    "reactionType": "Double Displacement",
+    "energy": "Exothermic",
+    "observations": ["Pale yellow/cream precipitate forms", "Precipitate darkens in light"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Silver ions combine with bromide ions to form insoluble silver bromide. Like all silver halides, AgBr is light-sensitive and darkens when exposed to light due to photoreduction of Ag⁺ to metallic silver.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Staining", "severity": "Medium", "description": "Silver nitrate stains skin black." }
+    ],
+    "funFact": "Silver bromide is the light-sensitive compound used in black-and-white photographic film. When light hits AgBr crystals, they decompose to form tiny grains of metallic silver, creating the image!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["AgNO₃", "KI"],
+    "reactantNames": ["Silver Nitrate", "Potassium Iodide"],
+    "products": [
+      { "name": "Silver Iodide", "formula": "AgI", "physicalState": "Solid", "color": "Yellow" },
+      { "name": "Potassium Nitrate", "formula": "KNO₃", "physicalState": "Aqueous", "color": "Colorless" }
+    ],
+    "balancedEquation": "AgNO₃ + KI → AgI↓ + KNO₃",
+    "reactionType": "Double Displacement",
+    "energy": "Exothermic",
+    "observations": ["Yellow precipitate forms immediately"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Silver ions combine with iodide ions to form insoluble silver iodide. The yellow color of AgI distinguishes it from AgCl (white) and AgBr (pale yellow), making this reaction useful in qualitative analysis.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Staining", "severity": "Medium", "description": "Silver nitrate stains." }
+    ],
+    "funFact": "Silver iodide is used in cloud seeding to make rain! Its crystal structure is similar to ice, so it acts as a nucleus for ice crystal formation in clouds.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Cl₂", "NaOH"],
+    "reactantNames": ["Chlorine", "Sodium Hydroxide"],
+    "products": [
+      { "name": "Sodium Chloride", "formula": "NaCl", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Sodium Hypochlorite", "formula": "NaClO", "physicalState": "Aqueous", "color": "Pale yellow" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" }
+    ],
+    "balancedEquation": "Cl₂ + 2NaOH → NaCl + NaClO + H₂O",
+    "reactionType": "Disproportionation",
+    "energy": "Exothermic",
+    "observations": ["Yellow-green chlorine gas decolorizes", "Solution develops bleach smell"],
+    "conditions": { "required": false, "details": ["Cold NaOH solution (below 15°C)"] },
+    "explanation": "Chlorine undergoes disproportionation — it is simultaneously oxidized and reduced. One Cl atom is reduced from 0 to -1 (in NaCl), while another is oxidized from 0 to +1 (in NaClO). This produces household bleach.",
+    "dangerLevel": "Unsafe",
+    "safetyWarnings": [
+      { "type": "Toxic Gas", "severity": "Critical", "description": "Chlorine gas is extremely toxic." },
+      { "type": "Corrosive", "severity": "High", "description": "NaOH is corrosive." }
+    ],
+    "funFact": "This is how household bleach (sodium hypochlorite solution) is manufactured! The product NaClO is the active ingredient in Clorox and similar bleach products.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Na₂CO₃", "CaCl₂"],
+    "reactantNames": ["Sodium Carbonate", "Calcium Chloride"],
+    "products": [
+      { "name": "Calcium Carbonate", "formula": "CaCO₃", "physicalState": "Solid", "color": "White" },
+      { "name": "Sodium Chloride", "formula": "NaCl", "physicalState": "Aqueous", "color": "Colorless" }
+    ],
+    "balancedEquation": "Na₂CO₃ + CaCl₂ → CaCO₃↓ + 2NaCl",
+    "reactionType": "Double Displacement",
+    "energy": "Exothermic",
+    "observations": ["White precipitate forms"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Calcium ions combine with carbonate ions to form insoluble calcium carbonate, which precipitates as a white solid. This is the same compound found in limestone, chalk, and marble.",
+    "dangerLevel": "Safe",
+    "safetyWarnings": [
+      { "type": "Irritant", "severity": "Low", "description": "Sodium carbonate is mildly irritating." }
+    ],
+    "funFact": "This reaction is essentially how stalactites and stalagmites form in caves — calcium carbonate precipitating from solution over thousands of years!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Mg(OH)₂", "HCl"],
+    "reactantNames": ["Magnesium Hydroxide", "Hydrochloric Acid"],
+    "products": [
+      { "name": "Magnesium Chloride", "formula": "MgCl₂", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" }
+    ],
+    "balancedEquation": "Mg(OH)₂ + 2HCl → MgCl₂ + 2H₂O",
+    "reactionType": "Neutralization",
+    "energy": "Exothermic",
+    "observations": ["White suspension clears as Mg(OH)₂ dissolves", "Slight warming"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Magnesium hydroxide neutralizes the acid by accepting H⁺ ions. The insoluble Mg(OH)₂ dissolves as it reacts. This is the same reaction that occurs when you take Milk of Magnesia as an antacid.",
+    "dangerLevel": "Safe",
+    "safetyWarnings": [],
+    "funFact": "This is exactly what happens in your stomach when you take Milk of Magnesia! The Mg(OH)₂ neutralizes excess stomach acid (HCl), providing relief from heartburn.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["H₂SO₄", "Zn"],
+    "reactantNames": ["Sulfuric Acid", "Zinc"],
+    "products": [
+      { "name": "Zinc Sulfate", "formula": "ZnSO₄", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Hydrogen Gas", "formula": "H₂", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "H₂SO₄ + Zn → ZnSO₄ + H₂↑",
+    "reactionType": "Single Displacement",
+    "energy": "Exothermic",
+    "observations": ["Bubbling/effervescence", "Zinc dissolves", "Solution warms up"],
+    "conditions": { "required": false, "details": ["Dilute sulfuric acid"] },
+    "explanation": "Zinc displaces hydrogen from dilute sulfuric acid because zinc is more reactive than hydrogen. The zinc is oxidized to Zn²⁺ and hydrogen ions are reduced to H₂ gas.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Flammable Gas", "severity": "High", "description": "Hydrogen gas is highly flammable." },
+      { "type": "Corrosive", "severity": "High", "description": "Sulfuric acid is corrosive." }
+    ],
+    "funFact": "This reaction was one of the ways hydrogen gas was first isolated in the 18th century by Henry Cavendish, who called it 'inflammable air'.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["NaCl", "H₂SO₄"],
+    "reactantNames": ["Sodium Chloride", "Sulfuric Acid"],
+    "products": [
+      { "name": "Sodium Hydrogen Sulfate", "formula": "NaHSO₄", "physicalState": "Solid", "color": "White" },
+      { "name": "Hydrogen Chloride", "formula": "HCl", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "NaCl + H₂SO₄ → NaHSO₄ + HCl↑",
+    "reactionType": "Double Displacement",
+    "energy": "Endothermic",
+    "observations": ["White fumes of HCl gas", "Pungent smell", "Steaming"],
+    "conditions": { "required": true, "details": ["Heating (concentrated H₂SO₄)"] },
+    "explanation": "Concentrated sulfuric acid, being a less volatile acid, displaces the more volatile HCl gas from sodium chloride on heating. This is a classic preparation method for hydrogen chloride gas.",
+    "dangerLevel": "Unsafe",
+    "safetyWarnings": [
+      { "type": "Toxic Gas", "severity": "High", "description": "HCl gas is corrosive and toxic." },
+      { "type": "Corrosive", "severity": "High", "description": "Concentrated H₂SO₄ is extremely corrosive." }
+    ],
+    "funFact": "This was historically the main method for producing hydrochloric acid, discovered by Jabir ibn Hayyan (Geber) around 800 CE. The process was later industrialized as the Leblanc process.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["NH₄Cl", "NaOH"],
+    "reactantNames": ["Ammonium Chloride", "Sodium Hydroxide"],
+    "products": [
+      { "name": "Sodium Chloride", "formula": "NaCl", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Ammonia", "formula": "NH₃", "physicalState": "Gas", "color": "Colorless" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" }
+    ],
+    "balancedEquation": "NH₄Cl + NaOH → NaCl + NH₃↑ + H₂O",
+    "reactionType": "Double Displacement",
+    "energy": "Endothermic",
+    "observations": ["Pungent ammonia gas released", "Gas turns damp red litmus blue", "Smell of ammonia"],
+    "conditions": { "required": true, "details": ["Gentle heating"] },
+    "explanation": "When heated with a strong base, the ammonium ion (NH₄⁺) releases ammonia gas. The hydroxide ion deprotonates the ammonium ion. This is the standard lab preparation and test for ammonium ions.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Toxic Gas", "severity": "Medium", "description": "Ammonia gas is irritating and toxic at high concentrations." },
+      { "type": "Corrosive", "severity": "Medium", "description": "NaOH is corrosive." }
+    ],
+    "funFact": "This reaction is used as the test for ammonium ions in qualitative analysis. If you add NaOH and heat, and the gas produced turns damp red litmus paper blue, ammonium ions are present!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["CuSO₄", "Fe"],
+    "reactantNames": ["Copper(II) Sulfate", "Iron"],
+    "products": [
+      { "name": "Iron(II) Sulfate", "formula": "FeSO₄", "physicalState": "Aqueous", "color": "Pale green" },
+      { "name": "Copper", "formula": "Cu", "physicalState": "Solid", "color": "Reddish-brown" }
+    ],
+    "balancedEquation": "CuSO₄ + Fe → FeSO₄ + Cu",
+    "reactionType": "Single Displacement",
+    "energy": "Exothermic",
+    "observations": ["Iron gets coated with copper", "Blue solution turns pale green", "Iron dissolves gradually"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Iron is more reactive than copper. Iron atoms donate electrons to copper ions, depositing metallic copper. This reaction illustrates the activity series concept.",
+    "dangerLevel": "Safe",
+    "safetyWarnings": [
+      { "type": "Irritant", "severity": "Low", "description": "Copper sulfate solution is an irritant." }
+    ],
+    "funFact": "You can try this at home! Place an iron nail in blue CuSO₄ solution and watch it slowly turn copper-colored over a few hours.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["ZnSO₄", "NaOH"],
+    "reactantNames": ["Zinc Sulfate", "Sodium Hydroxide"],
+    "products": [
+      { "name": "Zinc Hydroxide", "formula": "Zn(OH)₂", "physicalState": "Solid", "color": "White" },
+      { "name": "Sodium Sulfate", "formula": "Na₂SO₄", "physicalState": "Aqueous", "color": "Colorless" }
+    ],
+    "balancedEquation": "ZnSO₄ + 2NaOH → Zn(OH)₂↓ + Na₂SO₄",
+    "reactionType": "Double Displacement",
+    "energy": "Exothermic",
+    "observations": ["White gelatinous precipitate forms", "Precipitate dissolves in excess NaOH (amphoteric)"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Zinc ions combine with hydroxide ions to form insoluble zinc hydroxide. Importantly, zinc hydroxide is amphoteric — it dissolves in both excess acid AND excess base. In excess NaOH, it forms the zincate ion [Zn(OH)₄]²⁻.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Corrosive", "severity": "Medium", "description": "NaOH is corrosive." }
+    ],
+    "funFact": "Zinc hydroxide demonstrates amphoteric behavior beautifully — add NaOH drop by drop to ZnSO₄ and a precipitate forms. Keep adding NaOH and the precipitate redissolves! This happens because zinc is amphoteric.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["CH₃COOH", "NaOH"],
+    "reactantNames": ["Acetic Acid", "Sodium Hydroxide"],
+    "products": [
+      { "name": "Sodium Acetate", "formula": "CH₃COONa", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" }
+    ],
+    "balancedEquation": "CH₃COOH + NaOH → CH₃COONa + H₂O",
+    "reactionType": "Neutralization",
+    "energy": "Exothermic",
+    "observations": ["No visible change", "Solution warms slightly", "Vinegar smell decreases"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Acetic acid (a weak acid) is neutralized by sodium hydroxide (a strong base). The acetate ion (CH₃COO⁻) is the conjugate base of acetic acid. The resulting sodium acetate solution is slightly basic due to hydrolysis of the acetate ion.",
+    "dangerLevel": "Safe",
+    "safetyWarnings": [
+      { "type": "Corrosive", "severity": "Medium", "description": "NaOH is corrosive." }
+    ],
+    "funFact": "Sodium acetate is used in 'hot ice' — a supersaturated solution that crystallizes dramatically when triggered, releasing heat. It's the chemistry behind reusable hand warmers!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["H₂SO₄", "BaCl₂"],
+    "reactantNames": ["Sulfuric Acid", "Barium Chloride"],
+    "products": [
+      { "name": "Barium Sulfate", "formula": "BaSO₄", "physicalState": "Solid", "color": "White" },
+      { "name": "Hydrochloric Acid", "formula": "HCl", "physicalState": "Aqueous", "color": "Colorless" }
+    ],
+    "balancedEquation": "H₂SO₄ + BaCl₂ → BaSO₄↓ + 2HCl",
+    "reactionType": "Double Displacement",
+    "energy": "Exothermic",
+    "observations": ["Dense white precipitate forms immediately", "Precipitate insoluble in all acids"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Barium ions and sulfate ions combine to form extremely insoluble barium sulfate. This reaction is used as a confirmatory test for sulfate ions in solution.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Toxic", "severity": "High", "description": "Barium chloride is toxic." },
+      { "type": "Corrosive", "severity": "High", "description": "Sulfuric acid is corrosive." }
+    ],
+    "funFact": "BaSO₄ is one of the most insoluble compounds known — its solubility product is about 10⁻¹⁰, meaning virtually none of it dissolves!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["H₂S", "CuSO₄"],
+    "reactantNames": ["Hydrogen Sulfide", "Copper(II) Sulfate"],
+    "products": [
+      { "name": "Copper(II) Sulfide", "formula": "CuS", "physicalState": "Solid", "color": "Black" },
+      { "name": "Sulfuric Acid", "formula": "H₂SO₄", "physicalState": "Aqueous", "color": "Colorless" }
+    ],
+    "balancedEquation": "H₂S + CuSO₄ → CuS↓ + H₂SO₄",
+    "reactionType": "Double Displacement",
+    "energy": "Exothermic",
+    "observations": ["Black precipitate forms immediately", "Blue color of solution fades"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Copper(II) ions combine with sulfide ions to form extremely insoluble copper(II) sulfide, a black precipitate. This reaction is used in qualitative analysis to detect copper ions.",
+    "dangerLevel": "Highly Dangerous",
+    "safetyWarnings": [
+      { "type": "Toxic Gas", "severity": "Critical", "description": "H₂S is extremely toxic — can be lethal at high concentrations." }
+    ],
+    "funFact": "H₂S was historically used in systematic qualitative analysis to separate metal ions into groups. Different metal sulfides have different colors: CuS (black), CdS (yellow), As₂S₃ (yellow), PbS (black).",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Ca", "H₂O"],
+    "reactantNames": ["Calcium", "Water"],
+    "products": [
+      { "name": "Calcium Hydroxide", "formula": "Ca(OH)₂", "physicalState": "Aqueous", "color": "Milky white" },
+      { "name": "Hydrogen Gas", "formula": "H₂", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "Ca + 2H₂O → Ca(OH)₂ + H₂↑",
+    "reactionType": "Single Displacement",
+    "energy": "Exothermic",
+    "observations": ["Steady stream of bubbles", "Solution turns milky", "Less violent than Na/K with water"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Calcium is reactive enough to displace hydrogen from water, though less vigorously than sodium or potassium. Calcium is oxidized to Ca²⁺ while water is reduced, releasing hydrogen gas.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Flammable Gas", "severity": "Medium", "description": "Hydrogen gas is flammable." },
+      { "type": "Corrosive", "severity": "Medium", "description": "Ca(OH)₂ solution is corrosive." }
+    ],
+    "funFact": "Unlike sodium and potassium, calcium sinks in water (density 1.55 g/cm³) and reacts more gently, making it a safer demonstration of metal-water reactivity.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["NaClO", "HCl"],
+    "reactantNames": ["Sodium Hypochlorite", "Hydrochloric Acid"],
+    "products": [
+      { "name": "Sodium Chloride", "formula": "NaCl", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Chlorine Gas", "formula": "Cl₂", "physicalState": "Gas", "color": "Yellow-green" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" }
+    ],
+    "balancedEquation": "NaClO + 2HCl → NaCl + Cl₂↑ + H₂O",
+    "reactionType": "Redox",
+    "energy": "Exothermic",
+    "observations": ["Yellow-green toxic gas produced", "Strong chlorine smell", "Bubbling"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "When bleach (NaClO) is mixed with acid, chlorine gas is produced. The Cl⁻ from HCl is oxidized while the Cl⁺ in NaClO is reduced, both forming Cl₂ gas. This is extremely dangerous!",
+    "dangerLevel": "Highly Dangerous",
+    "safetyWarnings": [
+      { "type": "Toxic Gas", "severity": "Critical", "description": "NEVER mix bleach with acid! Produces deadly chlorine gas." },
+      { "type": "Corrosive", "severity": "High", "description": "All reagents and products are hazardous." }
+    ],
+    "funFact": "NEVER mix bleach with toilet bowl cleaner or any acid! This common household accident produces chlorine gas, which was used as a chemical weapon in World War I. Call poison control immediately if this happens.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["H₃PO₄", "NaOH"],
+    "reactantNames": ["Phosphoric Acid", "Sodium Hydroxide"],
+    "products": [
+      { "name": "Sodium Phosphate", "formula": "Na₃PO₄", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" }
+    ],
+    "balancedEquation": "H₃PO₄ + 3NaOH → Na₃PO₄ + 3H₂O",
+    "reactionType": "Neutralization",
+    "energy": "Exothermic",
+    "observations": ["Solution warms up", "No visible change"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Phosphoric acid is a triprotic acid — it has three H⁺ ions to donate. Complete neutralization requires 3 moles of NaOH per mole of H₃PO₄. The product is trisodium phosphate (TSP).",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Corrosive", "severity": "Medium", "description": "Both reagents can be corrosive." }
+    ],
+    "funFact": "Trisodium phosphate (TSP) was once a common ingredient in laundry detergents and dishwasher powders. It was phased out due to environmental concerns about phosphate pollution causing algal blooms.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Br₂", "KI"],
+    "reactantNames": ["Bromine", "Potassium Iodide"],
+    "products": [
+      { "name": "Potassium Bromide", "formula": "KBr", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Iodine", "formula": "I₂", "physicalState": "Solid", "color": "Brown/Purple" }
+    ],
+    "balancedEquation": "Br₂ + 2KI → 2KBr + I₂",
+    "reactionType": "Single Displacement",
+    "energy": "Exothermic",
+    "observations": ["Brown bromine color fades", "Solution turns brown (from dissolved I₂)", "Starch indicator turns blue-black if added"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Bromine is more reactive than iodine (higher in the halogen activity series), so it displaces iodine from potassium iodide. Bromine is reduced (Br₂ → 2Br⁻) while iodide is oxidized (2I⁻ → I₂).",
+    "dangerLevel": "Unsafe",
+    "safetyWarnings": [
+      { "type": "Corrosive", "severity": "High", "description": "Bromine is highly corrosive and toxic." },
+      { "type": "Toxic Vapors", "severity": "High", "description": "Bromine vapors are dangerous. Use in fume hood." }
+    ],
+    "funFact": "This reaction demonstrates the halogen displacement series: F₂ > Cl₂ > Br₂ > I₂. Each halogen can displace those below it from their salt solutions, but not those above it.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Cl₂", "KI"],
+    "reactantNames": ["Chlorine", "Potassium Iodide"],
+    "products": [
+      { "name": "Potassium Chloride", "formula": "KCl", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Iodine", "formula": "I₂", "physicalState": "Solid", "color": "Brown" }
+    ],
+    "balancedEquation": "Cl₂ + 2KI → 2KCl + I₂",
+    "reactionType": "Single Displacement",
+    "energy": "Exothermic",
+    "observations": ["Solution turns brown", "Adding starch gives blue-black color", "Yellow-green chlorine water decolorizes"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Chlorine is more reactive than iodine and displaces it from potassium iodide. Chlorine is reduced to chloride ions while iodide is oxidized to iodine.",
+    "dangerLevel": "Unsafe",
+    "safetyWarnings": [
+      { "type": "Toxic Gas", "severity": "Critical", "description": "Chlorine gas is highly toxic. Work in fume hood." }
+    ],
+    "funFact": "This is a key reaction in water treatment — chlorine is added to water supplies, and any iodide present is oxidized. The starch-iodide test can detect chlorine in water.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Na₂SO₄", "BaCl₂"],
+    "reactantNames": ["Sodium Sulfate", "Barium Chloride"],
+    "products": [
+      { "name": "Barium Sulfate", "formula": "BaSO₄", "physicalState": "Solid", "color": "White" },
+      { "name": "Sodium Chloride", "formula": "NaCl", "physicalState": "Aqueous", "color": "Colorless" }
+    ],
+    "balancedEquation": "Na₂SO₄ + BaCl₂ → BaSO₄↓ + 2NaCl",
+    "reactionType": "Double Displacement",
+    "energy": "Exothermic",
+    "observations": ["Dense white precipitate forms"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Barium ions combine with sulfate ions to form the highly insoluble barium sulfate precipitate. This is the standard confirmatory test for sulfate ions.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Toxic", "severity": "Medium", "description": "Barium chloride is toxic." }
+    ],
+    "funFact": "Barium sulfate is used as a radiocontrast agent in medical imaging. Patients drink a 'barium meal' before X-rays of the digestive system because BaSO₄ is opaque to X-rays.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["CuCl₂", "NaOH"],
+    "reactantNames": ["Copper(II) Chloride", "Sodium Hydroxide"],
+    "products": [
+      { "name": "Copper(II) Hydroxide", "formula": "Cu(OH)₂", "physicalState": "Solid", "color": "Blue" },
+      { "name": "Sodium Chloride", "formula": "NaCl", "physicalState": "Aqueous", "color": "Colorless" }
+    ],
+    "balancedEquation": "CuCl₂ + 2NaOH → Cu(OH)₂↓ + 2NaCl",
+    "reactionType": "Double Displacement",
+    "energy": "Exothermic",
+    "observations": ["Light blue gelatinous precipitate", "Clear blue-green solution becomes less colored"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Copper(II) ions combine with hydroxide ions to form insoluble copper(II) hydroxide. This is a characteristic blue precipitate used to identify Cu²⁺ ions.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Corrosive", "severity": "Medium", "description": "NaOH is corrosive." },
+      { "type": "Irritant", "severity": "Low", "description": "CuCl₂ is an irritant." }
+    ],
+    "funFact": "This reaction is the basis of the Biuret test for proteins — Cu(OH)₂ reacts with peptide bonds to produce a violet color, confirming the presence of proteins.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["MnO₂", "HCl"],
+    "reactantNames": ["Manganese Dioxide", "Hydrochloric Acid"],
+    "products": [
+      { "name": "Manganese(II) Chloride", "formula": "MnCl₂", "physicalState": "Aqueous", "color": "Pale pink" },
+      { "name": "Chlorine Gas", "formula": "Cl₂", "physicalState": "Gas", "color": "Yellow-green" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" }
+    ],
+    "balancedEquation": "MnO₂ + 4HCl → MnCl₂ + Cl₂↑ + 2H₂O",
+    "reactionType": "Redox",
+    "energy": "Exothermic",
+    "observations": ["Yellow-green gas produced", "Strong chlorine smell", "Brown/black MnO₂ dissolves"],
+    "conditions": { "required": true, "details": ["Heating", "Concentrated HCl"] },
+    "explanation": "MnO₂ oxidizes HCl. Mn is reduced from +4 to +2, while Cl is oxidized from -1 to 0 (Cl₂). This is a classic lab preparation of chlorine gas. Only 2 of the 4 HCl molecules are oxidized.",
+    "dangerLevel": "Highly Dangerous",
+    "safetyWarnings": [
+      { "type": "Toxic Gas", "severity": "Critical", "description": "Chlorine gas is extremely toxic. Perform only in fume hood." },
+      { "type": "Corrosive", "severity": "High", "description": "Concentrated HCl is highly corrosive." }
+    ],
+    "funFact": "This was the original method Carl Wilhelm Scheele used to discover chlorine in 1774. He called it 'dephlogisticated muriatic acid air' — quite a mouthful compared to 'chlorine'!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Na₂S₂O₃", "HCl"],
+    "reactantNames": ["Sodium Thiosulfate", "Hydrochloric Acid"],
+    "products": [
+      { "name": "Sodium Chloride", "formula": "NaCl", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Sulfur", "formula": "S", "physicalState": "Solid", "color": "Yellow" },
+      { "name": "Sulfur Dioxide", "formula": "SO₂", "physicalState": "Gas", "color": "Colorless" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Liquid", "color": "Colorless" }
+    ],
+    "balancedEquation": "Na₂S₂O₃ + 2HCl → 2NaCl + S↓ + SO₂↑ + H₂O",
+    "reactionType": "Disproportionation",
+    "energy": "Endothermic",
+    "observations": ["Solution gradually turns cloudy/milky", "Yellow sulfur precipitate appears", "Smell of sulfur dioxide"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Thiosulfate reacts with acid to form thiosulfuric acid, which is unstable and decomposes. The sulfur in thiosulfate disproportionates — one S is oxidized to SO₂ (+4) and the other is reduced to elemental S (0).",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Toxic Gas", "severity": "Medium", "description": "SO₂ gas is produced — work in ventilated area." }
+    ],
+    "funFact": "This reaction is used in the classic 'disappearing cross' rate of reaction experiment! A paper cross is placed under the beaker, and students time how long it takes for the sulfur precipitate to obscure the cross at different temperatures.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["C₃H₈", "O₂"],
+    "reactantNames": ["Propane", "Oxygen"],
+    "products": [
+      { "name": "Carbon Dioxide", "formula": "CO₂", "physicalState": "Gas", "color": "Colorless" },
+      { "name": "Water", "formula": "H₂O", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "C₃H₈ + 5O₂ → 3CO₂ + 4H₂O",
+    "reactionType": "Combustion",
+    "energy": "Exothermic",
+    "observations": ["Blue flame", "Heat released", "No soot in complete combustion"],
+    "conditions": { "required": true, "details": ["Ignition source"] },
+    "explanation": "Propane undergoes complete combustion in excess oxygen. All carbon is converted to CO₂ and all hydrogen to H₂O. This reaction releases about 2220 kJ/mol of energy.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Flammable", "severity": "High", "description": "Propane is extremely flammable and explosive in air." }
+    ],
+    "funFact": "Propane is the fuel used in most gas barbecue grills. When you grill, you're performing combustion chemistry! About 91.5% of the energy content of propane is released as heat.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Li", "H₂O"],
+    "reactantNames": ["Lithium", "Water"],
+    "products": [
+      { "name": "Lithium Hydroxide", "formula": "LiOH", "physicalState": "Aqueous", "color": "Colorless" },
+      { "name": "Hydrogen Gas", "formula": "H₂", "physicalState": "Gas", "color": "Colorless" }
+    ],
+    "balancedEquation": "2Li + 2H₂O → 2LiOH + H₂↑",
+    "reactionType": "Single Displacement",
+    "energy": "Exothermic",
+    "observations": ["Lithium floats and fizzes gently", "Crimson red flame may appear", "Solution becomes alkaline"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Lithium, the least reactive of the common alkali metals, reacts gently with water. It is oxidized to Li⁺, and water is reduced, releasing hydrogen gas. The reaction is less vigorous than sodium or potassium with water.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Flammable Gas", "severity": "Medium", "description": "Hydrogen gas is flammable." },
+      { "type": "Corrosive", "severity": "Low", "description": "LiOH is corrosive." }
+    ],
+    "funFact": "Lithium is the lightest metal (density 0.534 g/cm³) and is one of only three elements that floats on water — along with sodium and potassium. But unlike Na and K, it reacts gently enough to observe safely!",
+    "isPopular": false
+  },
+  {
+    "reactants": ["Al", "Fe₂O₃"],
+    "reactantNames": ["Aluminum", "Iron(III) Oxide"],
+    "products": [
+      { "name": "Aluminum Oxide", "formula": "Al₂O₃", "physicalState": "Solid", "color": "White" },
+      { "name": "Iron", "formula": "Fe", "physicalState": "Liquid", "color": "Glowing orange" }
+    ],
+    "balancedEquation": "2Al + Fe₂O₃ → Al₂O₃ + 2Fe",
+    "reactionType": "Single Displacement",
+    "energy": "Exothermic",
+    "observations": ["Extremely bright, blinding light", "Molten iron produced", "Temperature reaches ~2500°C", "Intense sparking"],
+    "conditions": { "required": true, "details": ["Ignition with magnesium ribbon fuse"] },
+    "explanation": "The thermite reaction is a dramatic displacement reaction. Aluminum is a stronger reducing agent than iron, so it reduces iron(III) oxide to metallic iron. The reaction is so exothermic that the iron is produced in a molten state at about 2500°C.",
+    "dangerLevel": "Highly Dangerous",
+    "safetyWarnings": [
+      { "type": "Extreme Heat", "severity": "Critical", "description": "Temperature exceeds 2500°C. Can melt through steel." },
+      { "type": "Blinding Light", "severity": "High", "description": "DO NOT look directly at the reaction." },
+      { "type": "Molten Metal", "severity": "Critical", "description": "Produces molten iron — severe burn risk." },
+      { "type": "Fire Hazard", "severity": "Critical", "description": "Can ignite surrounding materials." }
+    ],
+    "funFact": "The thermite reaction is used industrially to weld railroad tracks together! The molten iron produced fills the gap between rails and solidifies, creating a strong joint. It was patented in 1895 by Hans Goldschmidt.",
+    "isPopular": false
+  },
+  {
+    "reactants": ["H₂O₂", "KI"],
+    "reactantNames": ["Hydrogen Peroxide", "Potassium Iodide"],
+    "products": [
+      { "name": "Iodine", "formula": "I₂", "physicalState": "Aqueous", "color": "Brown" },
+      { "name": "Potassium Hydroxide", "formula": "KOH", "physicalState": "Aqueous", "color": "Colorless" }
+    ],
+    "balancedEquation": "H₂O₂ + 2KI → I₂ + 2KOH",
+    "reactionType": "Redox",
+    "energy": "Exothermic",
+    "observations": ["Solution turns brown/yellow from iodine", "Rapid decomposition of H₂O₂", "Foaming if soap is added"],
+    "conditions": { "required": false, "details": [] },
+    "explanation": "Hydrogen peroxide oxidizes iodide ions (I⁻) to iodine (I₂), while being reduced to water/OH⁻. KI also acts as a catalyst for H₂O₂ decomposition, making this the basis of the Elephant Toothpaste demonstration when soap is added.",
+    "dangerLevel": "Caution",
+    "safetyWarnings": [
+      { "type": "Oxidizer", "severity": "Medium", "description": "Concentrated H₂O₂ is a strong oxidizer." }
+    ],
+    "funFact": "Add dish soap and food coloring to this reaction and you get 'Elephant Toothpaste' — a massive foam eruption that's one of the most popular chemistry demonstrations on the internet!",
+    "isPopular": false
+  }
+]

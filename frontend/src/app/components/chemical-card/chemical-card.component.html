@@ -1,0 +1,29 @@
+<a [routerLink]="['/chemicals', chemical._id]" class="chemical-card glass-card">
+  <div class="card-header">
+    <span class="state-indicator" [attr.data-tooltip]="chemical.physicalState">{{ getStateEmoji() }}</span>
+    <span class="badge" [ngClass]="getCategoryClass()">{{ chemical.category }}</span>
+  </div>
+
+  <div class="card-body">
+    <div class="formula-display">{{ chemical.formula }}</div>
+    <h3 class="chemical-name">{{ chemical.name }}</h3>
+  </div>
+
+  <div class="card-footer">
+    <div class="color-info">
+      <span class="color-swatch" [style.background]="chemical.color === 'Colorless' ? 'transparent' : chemical.color"></span>
+      <span class="color-label">{{ chemical.color }}</span>
+    </div>
+    @if (chemical.molarMass) {
+      <span class="molar-mass">{{ chemical.molarMass }} g/mol</span>
+    }
+  </div>
+
+  @if (chemical.hazards && chemical.hazards.length > 0) {
+    <div class="hazard-strip">
+      @for (hazard of chemical.hazards.slice(0, 2); track hazard) {
+        <span class="hazard-dot" [attr.data-tooltip]="hazard">⚠</span>
+      }
+    </div>
+  }
+</a>
