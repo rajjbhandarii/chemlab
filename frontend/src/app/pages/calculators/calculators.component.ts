@@ -4,11 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { calculateMolarMass, calcMolarity, calcDilution, calcIdealGas, calcPH, calcYield } from '../../utils/calculator-utils';
 
 @Component({
-  selector: 'app-calculators',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
-  templateUrl: './calculators.component.html',
-  styleUrl: './calculators.component.scss'
+    selector: 'app-calculators',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './calculators.component.html',
+    styleUrl: './calculators.component.scss'
 })
 export class CalculatorsComponent {
   activeTab = signal(0);

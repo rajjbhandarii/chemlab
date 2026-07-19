@@ -4,11 +4,10 @@ import { RouterLink } from '@angular/router';
 import { ChemicalListItem } from '../../models/chemical.model';
 
 @Component({
-  selector: 'app-chemical-card',
-  standalone: true,
-  imports: [CommonModule, RouterLink],
-  templateUrl: './chemical-card.component.html',
-  styleUrl: './chemical-card.component.scss'
+    selector: 'app-chemical-card',
+    imports: [CommonModule, RouterLink],
+    templateUrl: './chemical-card.component.html',
+    styleUrl: './chemical-card.component.scss'
 })
 export class ChemicalCardComponent {
   @Input({ required: true }) chemical!: ChemicalListItem;

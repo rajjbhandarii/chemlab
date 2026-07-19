@@ -4,11 +4,10 @@ import { FormsModule } from '@angular/forms';
 import { balanceEquation } from '../../utils/equation-balancer';
 
 @Component({
-  selector: 'app-equation-balancer',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
-  templateUrl: './equation-balancer.component.html',
-  styleUrl: './equation-balancer.component.scss'
+    selector: 'app-equation-balancer',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './equation-balancer.component.html',
+    styleUrl: './equation-balancer.component.scss'
 })
 export class EquationBalancerComponent {
   input = signal('');

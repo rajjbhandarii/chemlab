@@ -2,16 +2,15 @@ import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
-  selector: 'app-safety-badge',
-  standalone: true,
-  imports: [CommonModule],
-  template: `
+    selector: 'app-safety-badge',
+    imports: [CommonModule],
+    template: `
     <span class="safety-badge" [ngClass]="'severity-' + severity.toLowerCase()">
       <span class="badge-icon">{{ getIcon() }}</span>
       {{ label }}
     </span>
   `,
-  styles: [`
+    styles: [`
     .safety-badge {
       display: inline-flex;
       align-items: center;

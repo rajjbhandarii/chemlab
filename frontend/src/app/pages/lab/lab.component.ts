@@ -21,11 +21,10 @@ interface ChemicalInput {
 }
 
 @Component({
-  selector: 'app-lab',
-  standalone: true,
-  imports: [CommonModule, FormsModule, SafetyBadgeComponent, LoadingSpinnerComponent],
-  templateUrl: './lab.component.html',
-  styleUrl: './lab.component.scss'
+    selector: 'app-lab',
+    imports: [CommonModule, FormsModule, SafetyBadgeComponent, LoadingSpinnerComponent],
+    templateUrl: './lab.component.html',
+    styleUrl: './lab.component.scss'
 })
 export class LabComponent implements OnInit {
   private reactionService = inject(ReactionService);

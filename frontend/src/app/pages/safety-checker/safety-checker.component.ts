@@ -10,10 +10,9 @@ import { LoadingSpinnerComponent } from '../../components/loading-spinner/loadin
 import { Subject, debounceTime, distinctUntilChanged, filter, switchMap } from 'rxjs';
 
 @Component({
-  selector: 'app-safety-checker',
-  standalone: true,
-  imports: [CommonModule, FormsModule, SafetyBadgeComponent, LoadingSpinnerComponent],
-  template: `
+    selector: 'app-safety-checker',
+    imports: [CommonModule, FormsModule, SafetyBadgeComponent, LoadingSpinnerComponent],
+    template: `
     <div class="page safety-page">
       <div class="container narrow">
         <div class="page-header"><h1>Safety <span class="text-gradient">Checker</span></h1><p>Check if your chemical combination is safe</p></div>
@@ -96,7 +95,7 @@ import { Subject, debounceTime, distinctUntilChanged, filter, switchMap } from '
       </div>
     </div>
   `,
-  styleUrl: './safety-checker.component.scss'
+    styleUrl: './safety-checker.component.scss'
 })
 export class SafetyCheckerComponent {
   private reactionService = inject(ReactionService);

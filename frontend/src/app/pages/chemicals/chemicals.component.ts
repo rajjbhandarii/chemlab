@@ -9,11 +9,10 @@ import { LoadingSpinnerComponent } from '../../components/loading-spinner/loadin
 import { EmptyStateComponent } from '../../components/empty-state/empty-state.component';
 
 @Component({
-  selector: 'app-chemicals',
-  standalone: true,
-  imports: [CommonModule, FormsModule, ChemicalCardComponent, LoadingSpinnerComponent, EmptyStateComponent],
-  templateUrl: './chemicals.component.html',
-  styleUrl: './chemicals.component.scss'
+    selector: 'app-chemicals',
+    imports: [CommonModule, FormsModule, ChemicalCardComponent, LoadingSpinnerComponent, EmptyStateComponent],
+    templateUrl: './chemicals.component.html',
+    styleUrl: './chemicals.component.scss'
 })
 export class ChemicalsComponent implements OnInit {
   private chemicalService = inject(ChemicalService);

@@ -4,10 +4,9 @@ import { RouterLink } from '@angular/router';
 import { LEARNING_TOPICS } from '../../data/learning-content';
 
 @Component({
-  selector: 'app-learn',
-  standalone: true,
-  imports: [CommonModule, RouterLink],
-  template: `
+    selector: 'app-learn',
+    imports: [CommonModule, RouterLink],
+    template: `
     <div class="page learn-page">
       <div class="container">
         <div class="page-header"><h1>Learning <span class="text-gradient">Center</span></h1><p>Explore fundamental chemistry topics with interactive content</p></div>
@@ -24,7 +23,7 @@ import { LEARNING_TOPICS } from '../../data/learning-content';
       </div>
     </div>
   `,
-  styles: [`
+    styles: [`
     .page-header { text-align: center; margin-bottom: 2.5rem; h1 { margin-bottom: 0.5rem; } p { color: var(--text-secondary); font-size: 1.1rem; } }
     .topics-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 1.5rem; }
     .topic-card { display: flex; flex-direction: column; gap: 0.75rem; text-decoration: none; color: inherit; padding: 2rem;

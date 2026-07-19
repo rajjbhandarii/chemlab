@@ -7,11 +7,10 @@ import { SafetyBadgeComponent } from '../../components/safety-badge/safety-badge
 import { LoadingSpinnerComponent } from '../../components/loading-spinner/loading-spinner.component';
 
 @Component({
-  selector: 'app-chemical-detail',
-  standalone: true,
-  imports: [CommonModule, RouterLink, SafetyBadgeComponent, LoadingSpinnerComponent],
-  templateUrl: './chemical-detail.component.html',
-  styleUrl: './chemical-detail.component.scss'
+    selector: 'app-chemical-detail',
+    imports: [CommonModule, RouterLink, SafetyBadgeComponent, LoadingSpinnerComponent],
+    templateUrl: './chemical-detail.component.html',
+    styleUrl: './chemical-detail.component.scss'
 })
 export class ChemicalDetailComponent implements OnInit {
   private route = inject(ActivatedRoute);

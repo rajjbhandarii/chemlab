@@ -4,10 +4,9 @@ import { ActivatedRoute, RouterLink } from '@angular/router';
 import { LEARNING_TOPICS, LearningTopic } from '../../data/learning-content';
 
 @Component({
-  selector: 'app-learn-topic',
-  standalone: true,
-  imports: [CommonModule, RouterLink],
-  template: `
+    selector: 'app-learn-topic',
+    imports: [CommonModule, RouterLink],
+    template: `
     <div class="page topic-page">
       <div class="container narrow">
         @if (topic) {
@@ -66,7 +65,7 @@ import { LEARNING_TOPICS, LearningTopic } from '../../data/learning-content';
       </div>
     </div>
   `,
-  styles: [`
+    styles: [`
     .narrow { max-width: 800px; margin: 0 auto; }
     .back-link { display: inline-block; margin-bottom: 1.5rem; color: var(--text-muted); font-size: 0.9rem; &:hover { color: var(--accent-primary); } }
     .topic-header { padding: 2.5rem; text-align: center; margin-bottom: 2rem;

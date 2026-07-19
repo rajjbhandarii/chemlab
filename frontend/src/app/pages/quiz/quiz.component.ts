@@ -5,11 +5,10 @@ import { QuizService } from '../../services/quiz.service';
 import { Quiz } from '../../models/quiz.model';
 
 @Component({
-  selector: 'app-quiz',
-  standalone: true,
-  imports: [CommonModule, FormsModule],
-  templateUrl: './quiz.component.html',
-  styleUrl: './quiz.component.scss',
+    selector: 'app-quiz',
+    imports: [CommonModule, FormsModule],
+    templateUrl: './quiz.component.html',
+    styleUrl: './quiz.component.scss'
 })
 export class QuizComponent implements OnInit {
   private quizService = inject(QuizService);
